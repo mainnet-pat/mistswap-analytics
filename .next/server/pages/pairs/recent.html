@@ -1,0 +1,1755 @@
+<!DOCTYPE html><html lang="en" dir="ltr" style="overflow-y:scroll"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="application-name"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="default"/><meta name="apple-mobile-web-app-title"/><meta name="description" content="Analytics for the MISTswap protocol"/><meta name="keywords" content="mistswap, uniswap"/><link rel="preload" href="/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous"/><meta name="format-detection" content="telephone=no"/><meta name="mobile-web-app-capable" content="yes"/><meta name="msapplication-config" content="/browserconfig.xml"/><meta name="msapplication-TileColor" content="#B93CF6"/><meta name="msapplication-tap-highlight" content="no"/><meta name="theme-color" content="#B93CF6"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><link href="/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16"/><link href="/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32"/><link rel="manifest" href="/manifest.json"/><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000"/><link rel="shortcut icon" href="/favicon.ico"/><meta name="twitter:card" content="summary"/><meta name="twitter:url"/><meta name="twitter:title"/><meta name="twitter:description"/><meta name="twitter:image" content="/android-chrome-192x192.png"/><meta name="twitter:creator" content="@MatthewLilley"/><meta property="og:type" content="website"/><meta property="og:title"/><meta property="og:description"/><meta property="og:site_name"/><meta property="og:url"/><meta property="og:image" content="/apple-touch-icon.png"/><script type="text/javascript" src="https://app.intotheblock.com/widget.js"></script><meta charSet="utf-8"/><meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/><title>Recently Added Pairs | MISTswap Analytics</title><meta name="next-head-count" content="3"/><link rel="preload" href="/_next/static/css/d4ede4179629eef856c5.css" as="style"/><link rel="stylesheet" href="/_next/static/css/d4ede4179629eef856c5.css" data-n-g=""/><noscript data-n-css=""></noscript><link rel="preload" href="/_next/static/chunks/main-f425bd5ca4afaffab9db.js" as="script"/><link rel="preload" href="/_next/static/chunks/webpack-eb080e3f091731f228fb.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework.9707fddd9ae5927c17c3.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons.696becd7d9bea91bdac5.js" as="script"/><link rel="preload" href="/_next/static/chunks/1746e22847ab6dd3740ba32ba781cc82ab8c4d21.27da0e80fb52e7a58975.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-1725f8ff3086aea1f1d8.js" as="script"/><link rel="preload" href="/_next/static/chunks/fa129ba31f1318b572d7ecbf9aed4e7c04710cc7.67b2fd062c59d0d63572.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/pairs/recent-8641491385c7f86992a2.js" as="script"/><style id="__jsx-910672296">@font-face{font-family:"Inter";font-style:normal;font-weight:100;font-display:block;src:url(/fonts/inter-var-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA, U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212, U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Inter";font-style:normal;font-weight:200;font-display:block;src:url(/fonts/inter-var-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA, U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212, U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Inter";font-style:normal;font-weight:300;font-display:block;src:url(/fonts/inter-var-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA, U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212, U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url(/fonts/inter-var-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA, U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212, U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:block;src:url(/fonts/inter-var-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA, U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212, U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:block;src:url(/fonts/inter-var-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA, U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212, U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:block;src:url(/fonts/inter-var-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA, U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212, U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:block;src:url(/fonts/inter-var-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA, U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212, U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Inter";font-style:normal;font-weight:900;font-display:block;src:url(/fonts/inter-var-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA, U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212, U+2215,U+FEFF,U+FFFD;}@font-face{font-family:"Inter";font-style:normal;font-weight:200;font-display:swap;src:url(/fonts/inter-var-latin-ext.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB, U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:300;font-display:swap;src:url(/fonts/inter-var-latin-ext.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB, U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-var-latin-ext.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB, U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/inter-var-latin-ext.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB, U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/inter-var-latin-ext.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB, U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/inter-var-latin-ext.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB, U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:swap;src:url(/fonts/inter-var-latin-ext.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB, U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:900;font-display:swap;src:url(/fonts/inter-var-latin-ext.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB, U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:100;font-display:swap;src:url(/fonts/inter-var-cyrillic.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:"Inter";font-style:normal;font-weight:200;font-display:swap;src:url(/fonts/inter-var-cyrillic.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:"Inter";font-style:normal;font-weight:300;font-display:swap;src:url(/fonts/inter-var-cyrillic.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-var-cyrillic.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/inter-var-cyrillic.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/inter-var-cyrillic.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/inter-var-cyrillic.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:swap;src:url(/fonts/inter-var-cyrillic.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:"Inter";font-style:normal;font-weight:900;font-display:swap;src:url(/fonts/inter-var-cyrillic.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:"Inter";font-style:swap;font-weight:100;font-display:block;src:url(/fonts/inter-var-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:"Inter";font-style:swap;font-weight:200;font-display:block;src:url(/fonts/inter-var-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:"Inter";font-style:swap;font-weight:300;font-display:block;src:url(/fonts/inter-var-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:"Inter";font-style:swap;font-weight:400;font-display:block;src:url(/fonts/inter-var-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:"Inter";font-style:swap;font-weight:500;font-display:block;src:url(/fonts/inter-var-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:"Inter";font-style:swap;font-weight:600;font-display:block;src:url(/fonts/inter-var-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:"Inter";font-style:swap;font-weight:700;font-display:block;src:url(/fonts/inter-var-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:"Inter";font-style:swap;font-weight:800;font-display:block;src:url(/fonts/inter-var-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:"Inter";font-style:swap;font-weight:900;font-display:block;src:url(/fonts/inter-var-cyrillic-ext.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:"Inter";font-style:normal;font-weight:100;font-display:swap;src:url(/fonts/inter-var-greek.woff2) format("woff2");unicode-range:U+0370-03FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:200;font-display:swap;src:url(/fonts/inter-var-greek.woff2) format("woff2");unicode-range:U+0370-03FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:300;font-display:swap;src:url(/fonts/inter-var-greek.woff2) format("woff2");unicode-range:U+0370-03FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-var-greek.woff2) format("woff2");unicode-range:U+0370-03FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/inter-var-greek.woff2) format("woff2");unicode-range:U+0370-03FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/inter-var-greek.woff2) format("woff2");unicode-range:U+0370-03FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/inter-var-greek.woff2) format("woff2");unicode-range:U+0370-03FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:swap;src:url(/fonts/inter-var-greek.woff2) format("woff2");unicode-range:U+0370-03FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:900;font-display:swap;src:url(/fonts/inter-var-greek.woff2) format("woff2");unicode-range:U+0370-03FF;}@font-face{font-family:"Inter";font-style:normal;font-weight:100;font-display:swap;src:url(/fonts/inter-var-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF;}@font-face{font-family:"Inter";font-style:normal;font-weight:200;font-display:swap;src:url(/fonts/inter-var-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF;}@font-face{font-family:"Inter";font-style:normal;font-weight:300;font-display:swap;src:url(/fonts/inter-var-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF;}@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-var-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF;}@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/inter-var-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF;}@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/inter-var-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF;}@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/inter-var-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF;}@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:swap;src:url(/fonts/inter-var-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF;}@font-face{font-family:"Inter";font-style:normal;font-weight:900;font-display:swap;src:url(/fonts/inter-var-greek-ext.woff2) format("woff2");unicode-range:U+1F00-1FFF;}@font-face{font-family:"Inter";font-style:normal;font-weight:100;font-display:swap;src:url(/fonts/inter-var-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169, U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:"Inter";font-style:normal;font-weight:200;font-display:swap;src:url(/fonts/inter-var-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169, U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:"Inter";font-style:normal;font-weight:300;font-display:swap;src:url(/fonts/inter-var-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169, U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-var-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169, U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/inter-var-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169, U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/inter-var-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169, U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/inter-var-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169, U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:swap;src:url(/fonts/inter-var-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169, U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:"Inter";font-style:normal;font-weight:900;font-display:swap;src:url(/fonts/inter-var-vietnamese.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169, U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:"Inter";font-style:normal;font-weight:100;font-display:swap;src:url(/fonts/inter-var-latin-ext.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB, U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}</style><style id="jss-server-side">html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: #050709;
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: #FEFEFE;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #FEFEFE;
+}
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #B93CF6;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #f50057;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+.MuiCollapse-container {
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiCollapse-entered {
+  height: auto;
+  overflow: visible;
+}
+.MuiCollapse-hidden {
+  visibility: hidden;
+}
+.MuiCollapse-wrapper {
+  display: flex;
+}
+.MuiCollapse-wrapperInner {
+  width: 100%;
+}
+.MuiPaper-root {
+  color: #050709;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #FFFFFF;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    color-adjust: exact;
+  }
+}
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #B93CF6;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(185, 60, 246, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #f50057;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(245, 0, 87, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+@media print {
+  .MuiAppBar-positionFixed {
+    position: absolute;
+  }
+}
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #B93CF6;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #f50057;
+  }
+  .MuiAppBar-colorInherit {
+    color: inherit;
+  }
+  .MuiAppBar-colorTransparent {
+    color: inherit;
+    background-color: transparent;
+  }
+  .MuiAvatar-root {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    font-size: 1.25rem;
+    align-items: center;
+    flex-shrink: 0;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    line-height: 1;
+    user-select: none;
+    border-radius: 50%;
+    justify-content: center;
+  }
+  .MuiAvatar-colorDefault {
+    color: #FEFEFE;
+    background-color: #bdbdbd;
+  }
+  .MuiAvatar-rounded {
+    border-radius: 4px;
+  }
+  .MuiAvatar-square {
+    border-radius: 0;
+  }
+  .MuiAvatar-img {
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    text-indent: 10000px;
+  }
+  .MuiAvatar-fallback {
+    width: 75%;
+    height: 75%;
+  }
+
+  .jss28 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .jss33 {
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .jss39 {
+    display: flex;
+    align-items: center;
+  }
+  .jss44 {  }
+  .jss45 {
+    display: flex;
+    align-items: center;
+  }
+  .jss46 {  }
+  .jss47 {
+    display: flex;
+    align-items: center;
+  }
+  .jss48 {  }
+  .jss49 {
+    display: flex;
+    align-items: center;
+  }
+  .jss50 {  }
+  .jss51 {
+    display: flex;
+    align-items: center;
+  }
+  .jss52 {  }
+  .jss53 {
+    display: flex;
+    align-items: center;
+  }
+  .jss54 {  }
+  .jss55 {
+    display: flex;
+    align-items: center;
+  }
+  .jss56 {  }
+  .jss57 {
+    display: flex;
+    align-items: center;
+  }
+  .jss58 {  }
+  .jss59 {
+    display: flex;
+    align-items: center;
+  }
+  .jss60 {  }
+  .jss61 {
+    display: flex;
+    align-items: center;
+  }
+  .jss62 {  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 3.5rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 300;
+    line-height: 1.167;
+  }
+@media (min-width:600px) {
+  .MuiTypography-h1 {
+    font-size: 4.7129rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-h1 {
+    font-size: 5.3556rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-h1 {
+    font-size: 5.9983rem;
+  }
+}
+  .MuiTypography-h2 {
+    font-size: 2.375rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+@media (min-width:600px) {
+  .MuiTypography-h2 {
+    font-size: 2.9167rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-h2 {
+    font-size: 3.3333rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+  }
+}
+  .MuiTypography-h3 {
+    font-size: 2rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    line-height: 1.167;
+  }
+@media (min-width:600px) {
+  .MuiTypography-h3 {
+    font-size: 2.5707rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-h3 {
+    font-size: 2.7849rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-h3 {
+    font-size: 2.9991rem;
+  }
+}
+  .MuiTypography-h4 {
+    font-size: 1.5625rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    line-height: 1.235;
+  }
+@media (min-width:600px) {
+  .MuiTypography-h4 {
+    font-size: 1.8219rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-h4 {
+    font-size: 2.0243rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-h4 {
+    font-size: 2.0243rem;
+  }
+}
+  .MuiTypography-h5 {
+    font-size: 1.25rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    line-height: 1.334;
+  }
+@media (min-width:600px) {
+  .MuiTypography-h5 {
+    font-size: 1.3118rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-h5 {
+    font-size: 1.4993rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-h5 {
+    font-size: 1.4993rem;
+  }
+}
+  .MuiTypography-h6 {
+    font-size: 1.125rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+@media (min-width:600px) {
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width:960px) {
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width:1280px) {
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+  }
+}
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #B93CF6;
+  }
+  .MuiTypography-colorSecondary {
+    color: #f50057;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: #050709;
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(5, 7, 9, 0.7);
+  }
+  .MuiTypography-colorError {
+    color: #f44336;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiContainer-root {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiContainer-disableGutters {
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+@media print {
+  .MuiDialog-root {
+    position: absolute !important;
+  }
+}
+  .MuiDialog-scrollPaper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .MuiDialog-scrollBody {
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+  }
+  .MuiDialog-scrollBody:after {
+    width: 0;
+    height: 100%;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .MuiDialog-container {
+    height: 100%;
+    outline: 0;
+  }
+@media print {
+  .MuiDialog-container {
+    height: auto;
+  }
+}
+  .MuiDialog-paper {
+    margin: 32px;
+    position: relative;
+    overflow-y: auto;
+  }
+@media print {
+  .MuiDialog-paper {
+    box-shadow: none;
+    overflow-y: visible;
+  }
+}
+  .MuiDialog-paperScrollPaper {
+    display: flex;
+    max-height: calc(100% - 64px);
+    flex-direction: column;
+  }
+  .MuiDialog-paperScrollBody {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+  .MuiDialog-paperWidthFalse {
+    max-width: calc(100% - 64px);
+  }
+  .MuiDialog-paperWidthXs {
+    max-width: 444px;
+  }
+@media (max-width:507.95px) {
+  .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperWidthSm {
+    max-width: 600px;
+  }
+@media (max-width:663.95px) {
+  .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperWidthMd {
+    max-width: 960px;
+  }
+@media (max-width:1023.95px) {
+  .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperWidthLg {
+    max-width: 1280px;
+  }
+@media (max-width:1343.95px) {
+  .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperWidthXl {
+    max-width: 1920px;
+  }
+@media (max-width:1983.95px) {
+  .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+  .MuiDialog-paperFullWidth {
+    width: calc(100% - 64px);
+  }
+  .MuiDialog-paperFullScreen {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    max-height: none;
+    border-radius: 0;
+  }
+  .MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+    margin: 0;
+    max-width: 100%;
+  }
+  .MuiDrawer-docked {
+    flex: 0 0 auto;
+  }
+  .MuiDrawer-paper {
+    top: 0;
+    flex: 1 0 auto;
+    height: 100%;
+    display: flex;
+    outline: 0;
+    z-index: 1200;
+    position: fixed;
+    overflow-y: auto;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch;
+  }
+  .MuiDrawer-paperAnchorLeft {
+    left: 0;
+    right: auto;
+  }
+  .MuiDrawer-paperAnchorRight {
+    left: auto;
+    right: 0;
+  }
+  .MuiDrawer-paperAnchorTop {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorBottom {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorDockedLeft {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedTop {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedRight {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedBottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+@keyframes mui-auto-fill {}
+@keyframes mui-auto-fill-cancel {}
+  .MuiInputBase-root {
+    color: #050709;
+    cursor: text;
+    display: inline-flex;
+    position: relative;
+    font-size: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    line-height: 1.1876em;
+    background-color: #fff;
+  }
+  .MuiInputBase-root.Mui-disabled {
+    color: rgba(5, 7, 9, 0.5);
+    cursor: default;
+  }
+  .MuiInputBase-multiline {
+    padding: 6px 0 7px;
+  }
+  .MuiInputBase-multiline.MuiInputBase-marginDense {
+    padding-top: 3px;
+  }
+  .MuiInputBase-fullWidth {
+    width: 100%;
+  }
+  .MuiInputBase-input {
+    font: inherit;
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    letter-spacing: inherit;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiInputBase-input::-webkit-input-placeholder {
+    color: currentColor;
+    opacity: 0.42;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiInputBase-input::-moz-placeholder {
+    color: currentColor;
+    opacity: 0.42;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiInputBase-input:-ms-input-placeholder {
+    color: currentColor;
+    opacity: 0.42;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiInputBase-input::-ms-input-placeholder {
+    color: currentColor;
+    opacity: 0.42;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiInputBase-input:focus {
+    outline: 0;
+  }
+  .MuiInputBase-input:invalid {
+    box-shadow: none;
+  }
+  .MuiInputBase-input::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  .MuiInputBase-input.Mui-disabled {
+    opacity: 1;
+  }
+  .MuiInputBase-input:-webkit-autofill {
+    animation-name: mui-auto-fill;
+    animation-duration: 5000s;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
+    opacity: 0 !important;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
+    opacity: 0 !important;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
+    opacity: 0 !important;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
+    opacity: 0 !important;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
+    opacity: 0.42;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
+    opacity: 0.42;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
+    opacity: 0.42;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
+    opacity: 0.42;
+  }
+  .MuiInputBase-inputMarginDense {
+    padding-top: 3px;
+  }
+  .MuiInputBase-inputMultiline {
+    height: auto;
+    resize: none;
+    padding: 0;
+  }
+  .MuiInputBase-inputTypeSearch {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+  }
+@media (min-width:0px) and (max-width:599.95px) {
+  .jss13 {
+    display: none;
+  }
+}
+@media (min-width:0px) {
+  .jss14 {
+    display: none;
+  }
+}
+@media (max-width:599.95px) {
+  .jss15 {
+    display: none;
+  }
+}
+@media (min-width:600px) and (max-width:959.95px) {
+  .jss16 {
+    display: none;
+  }
+}
+@media (min-width:600px) {
+  .jss17 {
+    display: none;
+  }
+}
+@media (max-width:959.95px) {
+  .jss18 {
+    display: none;
+  }
+}
+@media (min-width:960px) and (max-width:1279.95px) {
+  .jss19 {
+    display: none;
+  }
+}
+@media (min-width:960px) {
+  .jss20 {
+    display: none;
+  }
+}
+@media (max-width:1279.95px) {
+  .jss21 {
+    display: none;
+  }
+}
+@media (min-width:1280px) and (max-width:1919.95px) {
+  .jss22 {
+    display: none;
+  }
+}
+@media (min-width:1280px) {
+  .jss23 {
+    display: none;
+  }
+}
+@media (max-width:1919.95px) {
+  .jss24 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss25 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss26 {
+    display: none;
+  }
+}
+@media (min-width:0px) {
+  .jss27 {
+    display: none;
+  }
+}
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .MuiList-root {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+  }
+  .MuiList-padding {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .MuiList-subheader {
+    padding-top: 0;
+  }
+  .MuiListItem-root {
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+    text-decoration: none;
+  }
+  .MuiListItem-root.Mui-focusVisible {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiListItem-root.Mui-disabled {
+    opacity: 0.5;
+  }
+  .MuiListItem-container {
+    position: relative;
+  }
+  .MuiListItem-dense {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .MuiListItem-alignItemsFlexStart {
+    align-items: flex-start;
+  }
+  .MuiListItem-divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    background-clip: padding-box;
+  }
+  .MuiListItem-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .MuiListItem-button {
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiListItem-button:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+@media (hover: none) {
+  .MuiListItem-button:hover {
+    background-color: transparent;
+  }
+}
+  .MuiListItem-secondaryAction {
+    padding-right: 48px;
+  }
+  .MuiListItemIcon-root {
+    color: rgba(0, 0, 0, 0.54);
+    display: inline-flex;
+    min-width: 56px;
+    flex-shrink: 0;
+  }
+  .MuiListItemIcon-alignItemsFlexStart {
+    margin-top: 8px;
+  }
+  .MuiListItemText-root {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .MuiListItemText-multiline {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .MuiListItemText-inset {
+    padding-left: 56px;
+  }
+  .MuiPopover-paper {
+    outline: 0;
+    position: absolute;
+    max-width: calc(100% - 32px);
+    min-width: 16px;
+    max-height: calc(100% - 32px);
+    min-height: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .MuiMenu-paper {
+    max-height: calc(100% - 96px);
+    -webkit-overflow-scrolling: touch;
+  }
+  .MuiMenu-list {
+    outline: 0;
+  }
+  .MuiSelect-select {
+    cursor: pointer;
+    min-width: 16px;
+    user-select: none;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+  .MuiSelect-select:focus {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .MuiSelect-select::-ms-expand {
+    display: none;
+  }
+  .MuiSelect-select.Mui-disabled {
+    cursor: default;
+  }
+  .MuiSelect-select[multiple] {
+    height: auto;
+  }
+  .MuiSelect-select:not([multiple]) option, .MuiSelect-select:not([multiple]) optgroup {
+    background-color: #FFFFFF;
+  }
+  .MuiSelect-select.MuiSelect-select {
+    padding-right: 24px;
+  }
+  .MuiSelect-filled.MuiSelect-filled {
+    padding-right: 32px;
+  }
+  .MuiSelect-outlined {
+    border-radius: 4px;
+  }
+  .MuiSelect-outlined.MuiSelect-outlined {
+    padding-right: 32px;
+  }
+  .MuiSelect-selectMenu {
+    height: auto;
+    overflow: hidden;
+    min-height: 1.1876em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiSelect-icon {
+    top: calc(50% - 12px);
+    color: rgba(0, 0, 0, 0.54);
+    right: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .MuiSelect-icon.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiSelect-iconOpen {
+    transform: rotate(180deg);
+  }
+  .MuiSelect-iconFilled {
+    right: 7px;
+  }
+  .MuiSelect-iconOutlined {
+    right: 7px;
+  }
+  .MuiSelect-nativeInput {
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .MuiTable-root {
+    width: 100%;
+    display: table;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  .MuiTable-root caption {
+    color: rgba(5, 7, 9, 0.7);
+    padding: 16px;
+    font-size: 0.875rem;
+    text-align: left;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    caption-side: bottom;
+  }
+  .MuiTable-stickyHeader {
+    border-collapse: separate;
+  }
+  .MuiTableBody-root {
+    display: table-row-group;
+  }
+  .MuiTableCell-root {
+    display: table-cell;
+    padding: 16px;
+    font-size: 0.875rem;
+    text-align: left;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    border-bottom: 1px solid
+    rgba(224, 224, 224, 1);
+    vertical-align: inherit;
+  }
+  .MuiTableCell-head {
+    color: #050709;
+    font-weight: 400;
+    line-height: 1.5rem;
+    white-space: nowrap;
+  }
+  .MuiTableCell-body {
+    color: #050709;
+  }
+  .MuiTableCell-footer {
+    color: rgba(5, 7, 9, 0.7);
+    font-size: 0.75rem;
+    line-height: 1.3125rem;
+  }
+  .MuiTableCell-sizeSmall {
+    padding: 6px 24px 6px 16px;
+  }
+  .MuiTableCell-sizeSmall:last-child {
+    padding-right: 16px;
+  }
+  .MuiTableCell-sizeSmall.MuiTableCell-paddingCheckbox {
+    width: 24px;
+    padding: 0 12px 0 16px;
+  }
+  .MuiTableCell-sizeSmall.MuiTableCell-paddingCheckbox:last-child {
+    padding-left: 12px;
+    padding-right: 16px;
+  }
+  .MuiTableCell-sizeSmall.MuiTableCell-paddingCheckbox > * {
+    padding: 0;
+  }
+  .MuiTableCell-paddingCheckbox {
+    width: 48px;
+    padding: 0 0 0 4px;
+  }
+  .MuiTableCell-paddingCheckbox:last-child {
+    padding-left: 0;
+    padding-right: 4px;
+  }
+  .MuiTableCell-paddingNone {
+    padding: 0;
+  }
+  .MuiTableCell-paddingNone:last-child {
+    padding: 0;
+  }
+  .MuiTableCell-alignLeft {
+    text-align: left;
+  }
+  .MuiTableCell-alignCenter {
+    text-align: center;
+  }
+  .MuiTableCell-alignRight {
+    text-align: right;
+    flex-direction: row-reverse;
+  }
+  .MuiTableCell-alignJustify {
+    text-align: justify;
+  }
+  .MuiTableCell-stickyHeader {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: sticky;
+    background-color: #FEFEFE;
+  }
+  .MuiTableContainer-root {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .MuiTableHead-root {
+    display: table-header-group;
+  }
+  .MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }
+  .MuiTablePagination-root {
+    color: #050709;
+    overflow: auto;
+    font-size: 0.875rem;
+  }
+  .MuiTablePagination-root:last-child {
+    padding: 0;
+  }
+  .MuiTablePagination-toolbar {
+    min-height: 52px;
+    padding-right: 2px;
+  }
+  .MuiTablePagination-spacer {
+    flex: 1 1 100%;
+  }
+  .MuiTablePagination-caption {
+    flex-shrink: 0;
+  }
+  .MuiTablePagination-selectRoot {
+    margin-left: 8px;
+    margin-right: 32px;
+  }
+  .MuiTablePagination-select {
+    text-align: right;
+    padding-left: 8px;
+    padding-right: 24px;
+    text-align-last: right;
+  }
+  .MuiTablePagination-input {
+    color: inherit;
+    font-size: inherit;
+    flex-shrink: 0;
+  }
+  .MuiTablePagination-actions {
+    flex-shrink: 0;
+    margin-left: 20px;
+  }
+  .MuiTableRow-root {
+    color: inherit;
+    display: table-row;
+    outline: 0;
+    vertical-align: middle;
+  }
+  .MuiTableRow-root.MuiTableRow-hover:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .MuiTableRow-root.Mui-selected, .MuiTableRow-root.Mui-selected:hover {
+    background-color: rgba(245, 0, 87, 0.08);
+  }
+  .MuiTableSortLabel-root {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: inherit;
+    justify-content: flex-start;
+  }
+  .MuiTableSortLabel-root:focus {
+    color: rgba(5, 7, 9, 0.7);
+  }
+  .MuiTableSortLabel-root:hover {
+    color: rgba(5, 7, 9, 0.7);
+  }
+  .MuiTableSortLabel-root.MuiTableSortLabel-active {
+    color: #050709;
+  }
+  .MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active .MuiTableSortLabel-icon {
+    color: rgba(5, 7, 9, 0.7);
+    opacity: 1;
+  }
+  .MuiTableSortLabel-root:hover .MuiTableSortLabel-icon {
+    opacity: 0.5;
+  }
+  .MuiTableSortLabel-icon {
+    opacity: 0;
+    font-size: 18px;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    margin-left: 4px;
+    user-select: none;
+    margin-right: 4px;
+  }
+  .MuiTableSortLabel-iconDirectionDesc {
+    transform: rotate(0deg);
+  }
+  .MuiTableSortLabel-iconDirectionAsc {
+    transform: rotate(180deg);
+  }
+  .MuiTooltip-popper {
+    z-index: 1500;
+    pointer-events: none;
+  }
+  .MuiTooltip-popperInteractive {
+    pointer-events: auto;
+  }
+  .MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow {
+    top: 0;
+    left: 0;
+    margin-top: -0.71em;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow {
+    left: 0;
+    bottom: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: -0.71em;
+  }
+  .MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow {
+    left: 0;
+    width: 0.71em;
+    height: 1em;
+    margin-top: 4px;
+    margin-left: -0.71em;
+    margin-bottom: 4px;
+  }
+  .MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow {
+    right: 0;
+    width: 0.71em;
+    height: 1em;
+    margin-top: 4px;
+    margin-right: -0.71em;
+    margin-bottom: 4px;
+  }
+  .MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow::before {
+    transform-origin: 0 0;
+  }
+  .MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow::before {
+    transform-origin: 100% 100%;
+  }
+  .MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow::before {
+    transform-origin: 100% 0;
+  }
+  .MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow::before {
+    transform-origin: 0 100%;
+  }
+  .MuiTooltip-tooltip {
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 0.625rem;
+    max-width: 300px;
+    word-wrap: break-word;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 500;
+    line-height: 1.4em;
+    border-radius: 4px;
+    background-color: rgba(97, 97, 97, 0.9);
+  }
+  .MuiTooltip-tooltipArrow {
+    margin: 0;
+    position: relative;
+  }
+  .MuiTooltip-arrow {
+    color: rgba(97, 97, 97, 0.9);
+    width: 1em;
+    height: 0.71em;
+    overflow: hidden;
+    position: absolute;
+    box-sizing: border-box;
+  }
+  .MuiTooltip-arrow::before {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    content: "";
+    display: block;
+    transform: rotate(45deg);
+    background-color: currentColor;
+  }
+  .MuiTooltip-touch {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.14286em;
+  }
+  .MuiTooltip-tooltipPlacementLeft {
+    margin: 0 24px ;
+    transform-origin: right center;
+  }
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementLeft {
+    margin: 0 14px;
+  }
+}
+  .MuiTooltip-tooltipPlacementRight {
+    margin: 0 24px;
+    transform-origin: left center;
+  }
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementRight {
+    margin: 0 14px;
+  }
+}
+  .MuiTooltip-tooltipPlacementTop {
+    margin: 24px 0;
+    transform-origin: center bottom;
+  }
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementTop {
+    margin: 14px 0;
+  }
+}
+  .MuiTooltip-tooltipPlacementBottom {
+    margin: 24px 0;
+    transform-origin: center top;
+  }
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementBottom {
+    margin: 14px 0;
+  }
+}
+  .jss9 {
+    z-index: 1201;
+    transition: margin 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms,width 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+    border-bottom: 1px solid rgba(5, 7, 9, 0.12);
+  }
+  .jss10 {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-start;
+  }
+@media (min-width:600px) {
+  .jss10 {
+    justify-content: start;
+  }
+}
+  .jss11 {
+    justify-content: center;
+  }
+  .jss12 {
+    margin-right: 16px;
+  }
+  .jss31 {
+    padding-left: 24px;
+  }
+  .jss32 {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .jss32 {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .jss32 {
+    min-height: 64px;
+  }
+}
+  .jss1 {
+    display: flex;
+  }
+  .jss2 {
+    display: none;
+  }
+@media (min-width:600px) {
+  .jss3 {
+    width: 240px;
+    flex-shrink: 0;
+  }
+}
+  .jss4 {
+    width: 240px;
+  }
+  .jss5 {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .jss5 {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .jss5 {
+    min-height: 64px;
+  }
+}
+  .jss6 {
+    width: 240px;
+    border: 0;
+  }
+  .jss7 {
+    width: 100%;
+    padding: 24px 0px;
+    flex-grow: 1;
+    margin-left: -240px;
+  }
+  .jss8 {
+    width: calc(100% - 240px);
+    margin-left: 0;
+  }
+  .MuiAvatarGroup-root {
+    display: flex;
+  }
+  .MuiAvatarGroup-avatar {
+    border: 0;
+    margin-left: -8px;
+  }
+  .MuiAvatarGroup-avatar:first-child {
+    margin-left: 0;
+  }
+  .jss43 {
+    color: rgba(5, 7, 9, 0.7);
+    margin-right: 16px;
+  }
+  .jss41 {
+    margin-right: 0;
+  }
+  .jss42 {
+    margin-right: 16px;
+  }
+  .jss35 {
+    width: 100%;
+  }
+  .jss36 {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .jss37 {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .jss38 {
+    top: 20px;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    border: 0;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+</style></head><body class="no-js"><script>
+                try {
+                  var query = window.matchMedia("(prefers-color-scheme: dark)");
+                  var darkMode = window.localStorage.getItem("darkMode") === "true";
+                
+                  if (darkMode) {
+                    document.documentElement.classList.add("dark-theme");
+                  }
+                } catch (e) {
+                  // Silence
+                }
+              </script><div id="__next"><div class="jss1"><header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorInherit jss9 mui-fixed MuiPaper-elevation0"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><button class="MuiButtonBase-root MuiIconButton-root jss12 MuiIconButton-edgeStart" tabindex="0" type="button" aria-label="open drawer"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg></span></button><div class="jss10"><div class="jss15"><div class="MuiBox-root jss28"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 121 150" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60.1445 0.507307L0.271179 33.1313L60.1525 65.79L120.021 33.1313L60.1445 0.507307Z" fill="white"></path><path d="M60.1472 21.7833L39.3005 33.1446L60.1472 44.514L80.9992 33.1446L60.1472 21.7833Z" fill="#ff1744"></path><path d="M60.2018 65.7899L0.329834 33.1312V117.249L60.1978 149.907L120.07 117.249V33.1312L60.2018 65.7899Z" fill="#050709" stroke="white" stroke-width="1"></path></svg></span></button><h6 class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-noWrap">MISTswap Analytics</h6></div></div><h6 class="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextPrimary MuiTypography-noWrap" style="margin-left:8px;margin-right:8px">/</h6><h6 class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-noWrap">Pairs</h6></div><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd" tabindex="0" type="button" aria-label="theme toggle" title="Toggle theme"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12.29 7c-.74 0-1.45.17-2.08.46 1.72.79 2.92 2.53 2.92 4.54s-1.2 3.75-2.92 4.54c.63.29 1.34.46 2.08.46 2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></span></button></div></header><nav class="jss3" aria-label="navigation"><div class="jss15"><div class="MuiDrawer-root MuiDrawer-docked jss3"><div class="MuiPaper-root MuiDrawer-paper jss4 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"><div classes="jss29"><div class="jss32"><div class="jss17"><div class="MuiBox-root jss33"><button class="MuiButtonBase-root MuiIconButton-root" tabindex="0" type="button"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 121 150" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M60.1445 0.507307L0.271179 33.1313L60.1525 65.79L120.021 33.1313L60.1445 0.507307Z" fill="white"></path><path d="M60.1472 21.7833L39.3005 33.1446L60.1472 44.514L80.9992 33.1446L60.1472 21.7833Z" fill="#ff1744"></path><path d="M60.2018 65.7899L0.329834 33.1312V117.249L60.1978 149.907L120.07 117.249V33.1312L60.2018 65.7899Z" fill="#050709" stroke="white" stroke-width="1"></path></svg></span></button><h6 class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextPrimary MuiTypography-noWrap">MIST Analytics</h6></div></div></div><ul class="MuiList-root jss30 MuiList-padding" direction="horizontal"><div class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Dashboard</span></div></div><div class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M1 21.98c0 .56.45 1.01 1.01 1.01H15c.56 0 1.01-.45 1.01-1.01V21H1v.98zM8.5 8.99C4.75 8.99 1 11 1 15h15c0-4-3.75-6.01-7.5-6.01zM3.62 13c1.11-1.55 3.47-2.01 4.88-2.01s3.77.46 4.88 2.01H3.62zM1 17h15v2H1zM18 5V1h-2v4h-5l.23 2h9.56l-1.4 14H18v2h1.72c.84 0 1.53-.65 1.63-1.47L23 5h-5z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Bar</span></div></div><div class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 16.99c-1.35 0-2.2.42-2.95.8-.65.33-1.18.6-2.05.6-.9 0-1.4-.25-2.05-.6-.75-.38-1.57-.8-2.95-.8s-2.2.42-2.95.8c-.65.33-1.17.6-2.05.6v1.95c1.35 0 2.2-.42 2.95-.8.65-.33 1.17-.6 2.05-.6s1.4.25 2.05.6c.75.38 1.57.8 2.95.8s2.2-.42 2.95-.8c.65-.33 1.18-.6 2.05-.6.9 0 1.4.25 2.05.6.75.38 1.58.8 2.95.8v-1.95c-.9 0-1.4-.25-2.05-.6-.75-.38-1.6-.8-2.95-.8zm0-4.45c-1.35 0-2.2.43-2.95.8-.65.32-1.18.6-2.05.6-.9 0-1.4-.25-2.05-.6-.75-.38-1.57-.8-2.95-.8s-2.2.43-2.95.8c-.65.32-1.17.6-2.05.6v1.95c1.35 0 2.2-.43 2.95-.8.65-.35 1.15-.6 2.05-.6s1.4.25 2.05.6c.75.38 1.57.8 2.95.8s2.2-.43 2.95-.8c.65-.35 1.15-.6 2.05-.6s1.4.25 2.05.6c.75.38 1.58.8 2.95.8v-1.95c-.9 0-1.4-.25-2.05-.6-.75-.38-1.6-.8-2.95-.8zm2.95-8.08c-.75-.38-1.58-.8-2.95-.8s-2.2.42-2.95.8c-.65.32-1.18.6-2.05.6-.9 0-1.4-.25-2.05-.6-.75-.37-1.57-.8-2.95-.8s-2.2.42-2.95.8c-.65.33-1.17.6-2.05.6v1.93c1.35 0 2.2-.43 2.95-.8.65-.33 1.17-.6 2.05-.6s1.4.25 2.05.6c.75.38 1.57.8 2.95.8s2.2-.43 2.95-.8c.65-.32 1.18-.6 2.05-.6.9 0 1.4.25 2.05.6.75.38 1.58.8 2.95.8V5.04c-.9 0-1.4-.25-2.05-.58zM17 8.09c-1.35 0-2.2.43-2.95.8-.65.35-1.15.6-2.05.6s-1.4-.25-2.05-.6c-.75-.38-1.57-.8-2.95-.8s-2.2.43-2.95.8c-.65.35-1.15.6-2.05.6v1.95c1.35 0 2.2-.43 2.95-.8.65-.32 1.18-.6 2.05-.6s1.4.25 2.05.6c.75.38 1.57.8 2.95.8s2.2-.43 2.95-.8c.65-.32 1.18-.6 2.05-.6.9 0 1.4.25 2.05.6.75.38 1.58.8 2.95.8V9.49c-.9 0-1.4-.25-2.05-.6-.75-.38-1.6-.8-2.95-.8z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Pools</span></div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path></svg></div><div class="MuiCollapse-container MuiCollapse-entered" style="min-height:0px"><div class="MuiCollapse-wrapper"><div class="MuiCollapse-wrapperInner"><div class="MuiList-root"><div class="MuiButtonBase-root MuiListItem-root jss31 MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.25 12.5L4.75 9H3.5v6h1.25v-3.5L7.3 15h1.2V9H7.25zM9.5 15h4v-1.25H11v-1.11h2.5v-1.26H11v-1.12h2.5V9h-4zm9.75-6v4.5h-1.12V9.99h-1.25v3.52h-1.13V9H14.5v5c0 .55.45 1 1 1h4c.55 0 1-.45 1-1V9h-1.25z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Recent</span></div></div><div class="MuiButtonBase-root MuiListItem-root jss31 MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4l9 16 9-16H3zm3.38 2h11.25L12 16 6.38 6z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">All</span></div></div></div></div></div></div><div class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Pairs</span></div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path></svg></div><div class="MuiCollapse-container MuiCollapse-entered" style="min-height:0px"><div class="MuiCollapse-wrapper"><div class="MuiCollapse-wrapperInner"><div class="MuiList-root"><div class="MuiButtonBase-root MuiListItem-root jss31 MuiListItem-gutters MuiListItem-button Mui-selected" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.25 12.5L4.75 9H3.5v6h1.25v-3.5L7.3 15h1.2V9H7.25zM9.5 15h4v-1.25H11v-1.11h2.5v-1.26H11v-1.12h2.5V9h-4zm9.75-6v4.5h-1.12V9.99h-1.25v3.52h-1.13V9H14.5v5c0 .55.45 1 1 1h4c.55 0 1-.45 1-1V9h-1.25z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Recent</span></div></div><div class="MuiButtonBase-root MuiListItem-root jss31 MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4l9 16 9-16H3zm3.38 2h11.25L12 16 6.38 6z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">All</span></div></div><div class="MuiButtonBase-root MuiListItem-root jss31 MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Gainers</span></div></div><div class="MuiButtonBase-root MuiListItem-root jss31 MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 18l2.29-2.29-4.88-4.88-4 4L2 7.41 3.41 6l6 6 4-4 6.3 6.29L22 12v6h-6z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Losers</span></div></div></div></div></div></div><div class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 16h3c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1h-3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1zm1-6h1v4h-1v-4zm-7 6h3c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1H9c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1zm1-6h1v4h-1v-4zM5 8h2v8H5zM2 4v16h20V4H2zm18 14H4V6h16v12z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Tokens</span></div></div><div class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11V3h-7v3H9V3H2v8h7V8h2v10h4v3h7v-8h-7v3h-2V8h2v3h7zM7 9H4V5h3v4zm10 6h3v4h-3v-4zm0-10h3v4h-3V5z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Portfolio</span></div></div></ul></div></div></div></div></nav><main class="jss7 jss8"><div class="jss5"></div><div class="MuiContainer-root MuiContainer-maxWidthXl"><div class="jss34"><div class="jss35"><div class="MuiTableContainer-root"><table class="MuiTable-root" aria-label="undefined table"><thead class="MuiTableHead-root"><tr class="MuiTableRow-root MuiTableRow-head"><th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft" scope="col"><span class="MuiButtonBase-root MuiTableSortLabel-root" tabindex="0" role="button" aria-disabled="false">Name<svg class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path></svg></span></th><th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight" scope="col"><span class="MuiButtonBase-root MuiTableSortLabel-root" tabindex="0" role="button" aria-disabled="false">Liquidity<svg class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path></svg></span></th><th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight" scope="col"><span class="MuiButtonBase-root MuiTableSortLabel-root" tabindex="0" role="button" aria-disabled="false">Volume (24h)<svg class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path></svg></span></th><th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight" scope="col"><span class="MuiButtonBase-root MuiTableSortLabel-root" tabindex="0" role="button" aria-disabled="false">Volume (7d)<svg class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path></svg></span></th><th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight" scope="col"><span class="MuiButtonBase-root MuiTableSortLabel-root" tabindex="0" role="button" aria-disabled="false">Fees (24h)<svg class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path></svg></span></th><th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight" scope="col"><span class="MuiButtonBase-root MuiTableSortLabel-root" tabindex="0" role="button" aria-disabled="false">Fees (7d)<svg class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path></svg></span></th><th class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight" scope="col"><span class="MuiButtonBase-root MuiTableSortLabel-root" tabindex="0" role="button" aria-disabled="false">Fees (Yearly)<svg class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path></svg></span></th></tr></thead><tbody class="MuiTableBody-root"><tr class="MuiTableRow-root"><th class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft" role="cell" scope="row"><div class="MuiBox-root jss39"><div class="MuiAvatarGroup-root jss42"><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:2"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x124559e3b63a89125CaB76ca2aDd07A335F89d57/logo.png" class="MuiAvatar-img"/></div><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:1"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x3743eC0673453E5009310C727Ba4eaF7b3a1cc04/logo.png" class="MuiAvatar-img"/></div></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorPrimary MuiTypography-noWrap" href="/pairs/0x61950d3b4ee4773483d2b35dbd98da4c309226c1">FRDG-WBCH</a></div></th><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$143.35</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"><div class="MuiBox-root jss44" style="color:inherit">0<!-- -->%</div></td></tr><tr class="MuiTableRow-root"><th class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft" role="cell" scope="row"><div class="MuiBox-root jss45"><div class="MuiAvatarGroup-root jss42"><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:2"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x3743eC0673453E5009310C727Ba4eaF7b3a1cc04/logo.png" class="MuiAvatar-img"/></div><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:1"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x9630D2223142a760ca8163497595ca0F41b2A610/logo.png" class="MuiAvatar-img"/></div></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorPrimary MuiTypography-noWrap" href="/pairs/0xb299e5b9f3dc386b918c4c2ab032936bb8e33fd5">WBCH-GIVECASH</a></div></th><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$1.74</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"><div class="MuiBox-root jss46" style="color:inherit">0<!-- -->%</div></td></tr><tr class="MuiTableRow-root"><th class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft" role="cell" scope="row"><div class="MuiBox-root jss47"><div class="MuiAvatarGroup-root jss42"><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:2"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x2a886b947d5a8f0e09408C9069914Fa44C06ed7e/logo.png" class="MuiAvatar-img"/></div><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:1"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x80453ACDfE0073D6743B27D72e06F48777EeAd80/logo.png" class="MuiAvatar-img"/></div></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorPrimary MuiTypography-noWrap" href="/pairs/0x24a3afe7550ed094167700caa1d5b4ef16adcbcc">VANDALS-ZOMBIE</a></div></th><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"><div class="MuiBox-root jss48" style="color:inherit">0<!-- -->%</div></td></tr><tr class="MuiTableRow-root"><th class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft" role="cell" scope="row"><div class="MuiBox-root jss49"><div class="MuiAvatarGroup-root jss42"><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:2"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x7eBeAdb95724a006aFaF2F1f051B13F4eBEBf711/logo.png" class="MuiAvatar-img"/></div><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:1"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x84e3aE3135d79536e032EE36DAcC15e676400638/logo.png" class="MuiAvatar-img"/></div></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorPrimary MuiTypography-noWrap" href="/pairs/0xb9dd1a938f930321c9ab2bd24f777b876d5d050d">$KITTEN-PSN</a></div></th><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$1,083.57</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"><div class="MuiBox-root jss50" style="color:inherit">0.00<!-- -->%</div></td></tr><tr class="MuiTableRow-root"><th class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft" role="cell" scope="row"><div class="MuiBox-root jss51"><div class="MuiAvatarGroup-root jss42"><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:2"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x039Bcd43B18A29aa72CabFe269BA045447C881E4/logo.png" class="MuiAvatar-img"/></div><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:1"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x3743eC0673453E5009310C727Ba4eaF7b3a1cc04/logo.png" class="MuiAvatar-img"/></div></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorPrimary MuiTypography-noWrap" href="/pairs/0x7ec72bd532dd98c1af9659285205c8aa2b9915cb">MM-WBCH</a></div></th><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$8.08</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$601.74</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$754.84</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$1.81</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$2.26</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"><div class="MuiBox-root jss52" style="color:#4caf50">8151.60<!-- -->%</div></td></tr><tr class="MuiTableRow-root"><th class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft" role="cell" scope="row"><div class="MuiBox-root jss53"><div class="MuiAvatarGroup-root jss42"><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:2"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x3743eC0673453E5009310C727Ba4eaF7b3a1cc04/logo.png" class="MuiAvatar-img"/></div><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:1"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x8803805547b4b7dD1E4d9492A43bF6418447fCB0/logo.png" class="MuiAvatar-img"/></div></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorPrimary MuiTypography-noWrap" href="/pairs/0xb04d3081ba0db7502ac96a4b81d38589b827a09f">WBCH-LZD</a></div></th><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$59,849.73</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$2,391.15</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$2,423.50</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$7.17</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$7.27</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"><div class="MuiBox-root jss54" style="color:#4caf50">4.37<!-- -->%</div></td></tr><tr class="MuiTableRow-root"><th class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft" role="cell" scope="row"><div class="MuiBox-root jss55"><div class="MuiAvatarGroup-root jss42"><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:2"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x5fA664f69c2A4A3ec94FaC3cBf7049BD9CA73129/logo.png" class="MuiAvatar-img"/></div><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:1"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x8128b9D0819EB2eC966eEeC409122155aA78ad1f/logo.png" class="MuiAvatar-img"/></div></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorPrimary MuiTypography-noWrap" href="/pairs/0x512f57db93c40540dbf17e948f6f913684545cea">MIST-FlokiBCH</a></div></th><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$507.74</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"><div class="MuiBox-root jss56" style="color:inherit">0.00<!-- -->%</div></td></tr><tr class="MuiTableRow-root"><th class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft" role="cell" scope="row"><div class="MuiBox-root jss57"><div class="MuiAvatarGroup-root jss42"><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:2"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x3743eC0673453E5009310C727Ba4eaF7b3a1cc04/logo.png" class="MuiAvatar-img"/></div><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:1"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x4f909dFE5Daaf94fbd1fD4C2E582F7608C87cd94/logo.png" class="MuiAvatar-img"/></div></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorPrimary MuiTypography-noWrap" href="/pairs/0x6fb2d514fd39614b97b95a6f811226989ce6078e">WBCH-KAIJU</a></div></th><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$175.61</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"><div class="MuiBox-root jss58" style="color:inherit">0.00<!-- -->%</div></td></tr><tr class="MuiTableRow-root"><th class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft" role="cell" scope="row"><div class="MuiBox-root jss59"><div class="MuiAvatarGroup-root jss42"><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:2"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x2999B9d5f6402514ED29441dbd7b4469C2e182B6/logo.png" class="MuiAvatar-img"/></div><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:1"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x3743eC0673453E5009310C727Ba4eaF7b3a1cc04/logo.png" class="MuiAvatar-img"/></div></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorPrimary MuiTypography-noWrap" href="/pairs/0x22d8267e9ac06840c7ba240b4f45495361343821">DOTO-WBCH</a></div></th><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$19.77</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.00</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"><div class="MuiBox-root jss60" style="color:inherit">0.00<!-- -->%</div></td></tr><tr class="MuiTableRow-root"><th class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft" role="cell" scope="row"><div class="MuiBox-root jss61"><div class="MuiAvatarGroup-root jss42"><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:2"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x49F9ECF126B6dDF51C731614755508A4674bA7eD/logo.png" class="MuiAvatar-img"/></div><div class="MuiAvatar-root jss43 MuiAvatar-circle jss41 MuiAvatarGroup-avatar" style="z-index:1"><img src="https://raw.githubusercontent.com/mistswapdex/assets/master/blockchains/smartbch/assets/0x5fA664f69c2A4A3ec94FaC3cBf7049BD9CA73129/logo.png" class="MuiAvatar-img"/></div></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorPrimary MuiTypography-noWrap" href="/pairs/0x8305de9fd7f4e1f9458a411344c8a3cd772dc6e5">RMZ-MIST</a></div></th><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$50.60</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$4.07</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$8.52</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.01</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight">$0.03</td><td class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"><div class="MuiBox-root jss62" style="color:#4caf50">8.82<!-- -->%</div></td></tr></tbody></table></div><div class="MuiTablePagination-root"><div class="MuiToolbar-root MuiToolbar-regular MuiTablePagination-toolbar MuiToolbar-gutters"><div class="MuiTablePagination-spacer"></div><p class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit">Rows per page:</p><div class="MuiInputBase-root MuiTablePagination-input MuiTablePagination-selectRoot"><div class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input" tabindex="0" role="button" aria-haspopup="listbox">10</div><input value="10" aria-hidden="true" tabindex="-1" class="MuiSelect-nativeInput"/><svg class="MuiSvgIcon-root MuiSelect-icon MuiTablePagination-selectIcon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg></div><p class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit">1-10 of 82</p><div class="MuiTablePagination-actions"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit Mui-disabled Mui-disabled" tabindex="-1" type="button" disabled="" title="Previous page" aria-label="Previous page"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path></svg></span></button><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit" tabindex="0" type="button" title="Next page" aria-label="Next page"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path></svg></span></button></div></div></div></div></div></div></main></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"initialApolloState":{"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04":{"id":"0x3743ec0673453e5009310c727ba4eaf7b3a1cc04","__typename":"Token","name":"Wrapped BCH","symbol":"WBCH","totalSupply":"24848","derivedETH":"1"},"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72":{"id":"0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72","__typename":"Token","name":"flexUSD","symbol":"flexUSD","totalSupply":"24472","derivedETH":"0.001395212113372968440615580799347777"},"Pair:0x24f011f12ea45afadb1d4245ba15dcab38b43d13":{"id":"0x24f011f12ea45afadb1d4245ba15dcab38b43d13","__typename":"Pair","reserveUSD":"2417007.403474262315741442","reserveETH":"3372.238007439436548892","volumeUSD":"6055454.109687265464166763983183546","untrackedVolumeUSD":"6055454.109687265464166763983183545","trackedReserveETH":"3372.238007439436548892","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72"},"reserve0":"1686.119003719718274446","reserve1":"1208503.701737131157870721","token0Price":"0.001395212113372968440615580799347777","token1Price":"716.736896429654031685561272385767","totalSupply":"44387.304203039984323656","txCount":"9307","timestamp":"1633237801","oneDay":{"untrackedVolumeUSD":"5863681.068515107818109987539228328","volumeUSD":"5863681.068515107818109987539228329","reserveUSD":"2341416.819035257944373184","txCount":"9073"},"sevenDay":{"untrackedVolumeUSD":"5410968.238049156852046665252081806","volumeUSD":"5410968.238049156852046665252081807","reserveUSD":"2282779.299187266766030676","txCount":"9073"}},"Token:0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129":{"id":"0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129","__typename":"Token","name":"MistToken","symbol":"MIST","totalSupply":"24472","derivedETH":"0.00002470772827522264256087677291821409"},"Pair:0x674a71e69fe8d5ccff6fdcf9f1fa4262aa14b154":{"id":"0x674a71e69fe8d5ccff6fdcf9f1fa4262aa14b154","__typename":"Pair","reserveUSD":"1552862.696069883161072232668258506","reserveETH":"2166.572843961707259066","volumeUSD":"8511072.65779342965689752579843728","untrackedVolumeUSD":"8512468.285614316099410538209687261","trackedReserveETH":"2166.572843961707259066","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129"},"reserve0":"1083.286421980853629533","reserve1":"43844031.709997105431333865","token0Price":"0.00002470772827522264256087677291821409","token1Price":"40473.16648705490713781658311215399","totalSupply":"211390.994712429735820395","txCount":"16632","timestamp":"1633238963","oneDay":{"untrackedVolumeUSD":"8243703.296618986657334060740193454","volumeUSD":"8242307.668798100214821048328943473","reserveUSD":"1342157.975530216523193050542034431","txCount":"16400"},"sevenDay":{"untrackedVolumeUSD":"7881162.48366651425678945121734607","volumeUSD":"7879766.855845627814276438806096089","reserveUSD":"1119530.558851457378010285315694681","txCount":"16400"}},"Token:0x77cb87b57f54667978eb1b199b28a0db8c8e1c0b":{"id":"0x77cb87b57f54667978eb1b199b28a0db8c8e1c0b","__typename":"Token","name":"Green Ben","symbol":"EBEN","totalSupply":"25728","derivedETH":"0.001765706984780732135082429952465565"},"Pair:0x80f712670d268cf2c05e7162674c7466c940ebe3":{"id":"0x80f712670d268cf2c05e7162674c7466c940ebe3","__typename":"Pair","reserveUSD":"695909.9326725664992360615511914577","reserveETH":"970.9419595958969309819999999999999","volumeUSD":"4333343.924928451760713488108510304","untrackedVolumeUSD":"4333343.924928451760713488108510304","trackedReserveETH":"970.9419595958969309820000000000001","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x77cb87b57f54667978eb1b199b28a0db8c8e1c0b"},"reserve0":"485.470979797948465491","reserve1":"274944.248384583982265695","token0Price":"0.001765706984780732135082429952465565","token1Price":"566.3453838147337583959200363473436","totalSupply":"11400.261066695215182309","txCount":"4070","timestamp":"1633237674","oneDay":{"untrackedVolumeUSD":"4200365.448577407907233262302962906","volumeUSD":"4200365.448577407907233262302962906","reserveUSD":"524365.1265539268344915642035915589","txCount":"3945"},"sevenDay":{"untrackedVolumeUSD":"3931549.286608643480972242294538841","volumeUSD":"3931549.286608643480972242294538841","reserveUSD":"395198.4411364551424142279287993781","txCount":"3945"}},"Pair:0x437e444365ad9ed788e8f255c908bcead5aea645":{"id":"0x437e444365ad9ed788e8f255c908bcead5aea645","__typename":"Pair","reserveUSD":"409765.1561319051164509732196806242","reserveETH":"574.3592808056306169200784891219607","volumeUSD":"2018981.414821813505644109634032899","untrackedVolumeUSD":"2022447.966769769119892933908779474","trackedReserveETH":"574.3592808056306169200784891219606","token0":{"__ref":"Token:0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129"},"token1":{"__ref":"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72"},"reserve0":"11597866.882824550295786841","reserve1":"205421.594530029874795498","token0Price":"56.45884946691472650991190101453114","token1Price":"0.01771201520119546302466099100527944","totalSupply":"1501435.065426943752232602","txCount":"6832","timestamp":"1633239051","oneDay":{"untrackedVolumeUSD":"1972686.316247027682933599132802399","volumeUSD":"1969219.764299072068684774858055824","reserveUSD":"378491.9183925168666223698614539472","txCount":"6753"},"sevenDay":{"untrackedVolumeUSD":"1883273.549419642369233550882152251","volumeUSD":"1879806.997471686754984726607405676","reserveUSD":"318933.3281347417898343319148561448","txCount":"6753"}},"Token:0xc41c680c60309d4646379ed62020c534eb67b6f4":{"id":"0xc41c680c60309d4646379ed62020c534eb67b6f4","__typename":"Token","name":"MISTbar","symbol":"xMIST","totalSupply":"34472","derivedETH":"0.00002560778007067185624222163596586467"},"Pair:0x0663b29e3caa8f2db0313ea8b3e942a0431429cf":{"id":"0x0663b29e3caa8f2db0313ea8b3e942a0431429cf","__typename":"Pair","reserveUSD":"372038.3393759669653792873328159649","reserveETH":"520.8605185880431164064307802444575","volumeUSD":"28154.05250016934976415611393172316","untrackedVolumeUSD":"28409.08818190012216858594696513375","trackedReserveETH":"520.8605185880431164064307802444574","token0":{"__ref":"Token:0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129"},"token1":{"__ref":"Token:0xc41c680c60309d4646379ed62020c534eb67b6f4"},"reserve0":"10533308.446256384693976885","reserve1":"10181555.516573429783380471","token0Price":"1.034548053989429725511996952466108","token1Price":"0.9666056556230468605198224574090946","totalSupply":"10342743.191781749316817184","txCount":"403","timestamp":"1634013011","oneDay":{"untrackedVolumeUSD":"26922.56565589128625569714038674708","volumeUSD":"26667.52997416051385126730735333648","reserveUSD":"305999.5703166141572439170118976107","txCount":"394"},"sevenDay":{"untrackedVolumeUSD":"22212.31432882708362345031024388167","volumeUSD":"21957.27864709631121902047721047108","reserveUSD":"150100.1362648553549825589248396461","txCount":"394"}},"Token:0x98dd7ec28fb43b3c4c770ae532417015fa939dd3":{"id":"0x98dd7ec28fb43b3c4c770ae532417015fa939dd3","__typename":"Token","name":"FLEX Coin","symbol":"FLEX","totalSupply":"24472","derivedETH":"0.003826989342856821995885792534027577"},"Pair:0x4ff52e9d7824ec9b4e0189f11b5aa0f02b459b03":{"id":"0x4ff52e9d7824ec9b4e0189f11b5aa0f02b459b03","__typename":"Pair","reserveUSD":"141825.2108531015088023720000000001","reserveETH":"198.2396430565377337008393965704104","volumeUSD":"401444.3190377605532945605924927282","untrackedVolumeUSD":"401868.4741822386701330670924927282","trackedReserveETH":"198.2396430565377337008393965704103","token0":{"__ref":"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72"},"token1":{"__ref":"Token:0x98dd7ec28fb43b3c4c770ae532417015fa939dd3"},"reserve0":"70912.605426550754401186","reserve1":"25941.789512653456418278","token0Price":"2.733527900685578311462055528528526","token1Price":"0.3658276177642805546367308956113456","totalSupply":"42228.034375048009120418","txCount":"1151","timestamp":"1633237894","oneDay":{"untrackedVolumeUSD":"397509.31569245879267934407640163","volumeUSD":"397085.16054798067584083757640163","reserveUSD":"139348.392640403351322694","txCount":"1128"},"sevenDay":{"untrackedVolumeUSD":"356443.2168105790899768100820896284","volumeUSD":"356019.0616661009731383035820896284","reserveUSD":"150747.0203636612566764199999999999","txCount":"1128"}},"Token:0x9192940099fdb2338b928de2cad9cd1525fea881":{"id":"0x9192940099fdb2338b928de2cad9cd1525fea881","__typename":"Token","name":"BCHPad","symbol":"BPAD","totalSupply":"34472","derivedETH":"0.00001505978469600992593443529007135379"},"Pair:0x8221d04a71fcd0dd3d096cb3b49e22918095933f":{"id":"0x8221d04a71fcd0dd3d096cb3b49e22918095933f","__typename":"Pair","reserveUSD":"127110.5255807919686060703850568741","reserveETH":"177.346145027525529244","volumeUSD":"168875.3153476480921283369626476225","untrackedVolumeUSD":"168875.3153476480921283369626476224","trackedReserveETH":"177.3461450275255292439999999999999","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x9192940099fdb2338b928de2cad9cd1525fea881"},"reserve0":"88.673072513762764622","reserve1":"5888070.400983660916824668","token0Price":"0.00001505978469600992593443529007135379","token1Price":"66402.01172762774921315649362599544","totalSupply":"22752.691478587532744429","txCount":"833","timestamp":"1634580605","oneDay":{"untrackedVolumeUSD":"149094.52993186375560543420652678","volumeUSD":"149094.52993186375560543420652678","reserveUSD":"109226.7028473204634590577325283939","txCount":"773"},"sevenDay":{"untrackedVolumeUSD":"119780.2482491982364144863460180442","volumeUSD":"119780.2482491982364144863460180442","reserveUSD":"90465.6719286531430708763028523106","txCount":"773"}},"Token:0xf2d4d9c65c2d1080ac9e1895f6a32045741831cd":{"id":"0xf2d4d9c65c2d1080ac9e1895f6a32045741831cd","__typename":"Token","name":"Honk","symbol":"HONK","totalSupply":"34472","derivedETH":"0.000000006826341086451259554994856451655336"},"Pair:0xbe48dc2353a460668a5d859c66e4472661581998":{"id":"0xbe48dc2353a460668a5d859c66e4472661581998","__typename":"Pair","reserveUSD":"106618.0620402696451525765276637148","reserveETH":"149.027993225653209352","volumeUSD":"60927.76217888353608276878768077167","untrackedVolumeUSD":"62619.69694346644973133059192726705","trackedReserveETH":"149.0279932256532093519999999999999","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xf2d4d9c65c2d1080ac9e1895f6a32045741831cd"},"reserve0":"74.513996612826604676","reserve1":"10915656816.61","token0Price":"0.000000006826341086451259554994856451655336","token1Price":"146491361.5267150120524850592631908","totalSupply":"0.00888379619290933","txCount":"571","timestamp":"1633859601","oneDay":{"untrackedVolumeUSD":"62454.13615370090237122990511480853","volumeUSD":"60762.20138911798872266810086831315","reserveUSD":"99705.30350793032134792844372884511","txCount":"565"},"sevenDay":{"untrackedVolumeUSD":"38868.05884544790155792707517081914","volumeUSD":"37176.12408086498790936527092432376","reserveUSD":"87167.09295993557957458863654006431","txCount":"565"}},"Token:0x7642df81b5beaeeb331cc5a104bd13ba68c34b91":{"id":"0x7642df81b5beaeeb331cc5a104bd13ba68c34b91","__typename":"Token","name":"Celery","symbol":"CLY","totalSupply":"34472","derivedETH":"0.0000003192536327827425154490133118884594"},"Pair:0x5775d98022590dc60e9c4ae0a1c56bf1fd8fcadc":{"id":"0x5775d98022590dc60e9c4ae0a1c56bf1fd8fcadc","__typename":"Pair","reserveUSD":"90294.10576603357170499451753565916","reserveETH":"126.564000933568936228","volumeUSD":"3644.062104861263942367867423499766","untrackedVolumeUSD":"3644.062104861263942367867423499764","trackedReserveETH":"126.564000933568936228","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x7642df81b5beaeeb331cc5a104bd13ba68c34b91"},"reserve0":"63.282000466784468114","reserve1":"198218575.980461708082719737","token0Price":"0.0000003192536327827425154490133118884594","token1Price":"3132305.782344900911798750247874384","totalSupply":"111765.853063411954170441","txCount":"51","timestamp":"1635117115","oneDay":{"untrackedVolumeUSD":"2196.116970960733036737376879615725","volumeUSD":"2196.116970960733036737376879615725","reserveUSD":"72260.05919624969156637359907242524","txCount":"44"},"sevenDay":{"untrackedVolumeUSD":"1597.721941891130593629731782237547","volumeUSD":"1597.721941891130593629731782237547","reserveUSD":"74368.32417375373935356977238497294","txCount":"44"}},"Token:0x675e1d6fce8c7cc091aed06a68d079489450338a":{"id":"0x675e1d6fce8c7cc091aed06a68d079489450338a","__typename":"Token","name":"Bitcoin Cash Argentina","symbol":"ARG","totalSupply":"24472","derivedETH":"0.0000000001613077999325645556150257946827232"},"Pair:0x41075d2ea8bef1cafb24d9bd2061b620cbc05b60":{"id":"0x41075d2ea8bef1cafb24d9bd2061b620cbc05b60","__typename":"Pair","reserveUSD":"75998.15251388574362788912223058022","reserveETH":"106.842328715860051996","volumeUSD":"116297.0020805798621187265634270701","untrackedVolumeUSD":"116297.0020805798621187265634270701","trackedReserveETH":"106.842328715860051996","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x675e1d6fce8c7cc091aed06a68d079489450338a"},"reserve0":"53.421164357930025998","reserve1":"331175332998.54676431083191915","token0Price":"0.0000000001613077999325645556150257946827232","token1Price":"6199328243.383484586491705976739694","totalSupply":"4186083.238142976225380148","txCount":"758","timestamp":"1633238241","oneDay":{"untrackedVolumeUSD":"115586.5120612320298698981205907324","volumeUSD":"115586.5120612320298698981205907324","reserveUSD":"72910.76332763241914328779475295048","txCount":"753"},"sevenDay":{"untrackedVolumeUSD":"113752.971896055347890079944752385","volumeUSD":"113752.971896055347890079944752385","reserveUSD":"65668.13017619452813293376356283659","txCount":"753"}},"Token:0xb5b1939ef0a3743d0ae9282dba62312b614a5ac0":{"id":"0xb5b1939ef0a3743d0ae9282dba62312b614a5ac0","__typename":"Token","name":"Potato","symbol":"POTA","totalSupply":"34472","derivedETH":"0.00000007650322966801343436415446679178922"},"Pair:0xcabdb1321ceab169935a0c9d4c856250766c3df7":{"id":"0xcabdb1321ceab169935a0c9d4c856250766c3df7","__typename":"Pair","reserveUSD":"74013.06804809930867263447227966072","reserveETH":"103.453568678784606634","volumeUSD":"28370.58744158141934911572106463644","untrackedVolumeUSD":"28505.21004784774697823957201646101","trackedReserveETH":"103.453568678784606634","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xb5b1939ef0a3743d0ae9282dba62312b614a5ac0"},"reserve0":"51.726784339392303317","reserve1":"676138570.408873261965176759","token0Price":"0.00000007650322966801343436415446679178922","token1Price":"13071343.5803888340858215505557984","totalSupply":"186196.112016693740266987","txCount":"282","timestamp":"1633435139","oneDay":{"untrackedVolumeUSD":"27219.39231216950157522759527751185","volumeUSD":"27084.76970590317394610374432568728","reserveUSD":"73826.38959701066951627786343475476","txCount":"274"},"sevenDay":{"untrackedVolumeUSD":"26511.99099731748587246154895682977","volumeUSD":"26377.3683910511582433376980050052","reserveUSD":"63876.01350779936418501766052752235","txCount":"274"}},"Token:0xe11829a7d5d8806bb36e118461a1012588fafd89":{"id":"0xe11829a7d5d8806bb36e118461a1012588fafd89","__typename":"Token","name":"Spice","symbol":"SPICE","totalSupply":"24472","derivedETH":"0.0000008966622665960131325180994807852118"},"Pair:0x287a276401cadbe50d5c0398137490e6d45830dd":{"id":"0x287a276401cadbe50d5c0398137490e6d45830dd","__typename":"Pair","reserveUSD":"65084.57096728960497966037602895749","reserveETH":"91.11959655277570854","volumeUSD":"147513.5459884505849257567542929073","untrackedVolumeUSD":"147760.1217234600878025311873797045","trackedReserveETH":"91.11959655277570854000000000000001","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xe11829a7d5d8806bb36e118461a1012588fafd89"},"reserve0":"45.55979827638785427","reserve1":"50810433.28537276571754729","token0Price":"0.0000008966622665960131325180994807852118","token1Price":"1115247.108363650129794163261241505","totalSupply":"47693.177319740979777115","txCount":"1146","timestamp":"1633238142","oneDay":{"untrackedVolumeUSD":"141638.0595574786309383129189807472","volumeUSD":"141391.48382246912806153848589395","reserveUSD":"68001.01031596678520024491702068869","txCount":"1115"},"sevenDay":{"untrackedVolumeUSD":"124948.1448192720148651404266261789","volumeUSD":"124701.5690842625119883659935393817","reserveUSD":"67409.97368311874957902856339124329","txCount":"1115"}},"Token:0x8803805547b4b7dd1e4d9492a43bf6418447fcb0":{"id":"0x8803805547b4b7dd1e4d9492a43bf6418447fcb0","__typename":"Token","name":"Lizard","symbol":"LZD","totalSupply":"34472","derivedETH":"0.0000007274525843417460733577409077864001"},"Pair:0xb04d3081ba0db7502ac96a4b81d38589b827a09f":{"id":"0xb04d3081ba0db7502ac96a4b81d38589b827a09f","__typename":"Pair","reserveUSD":"59849.73356123066881187989456105531","reserveETH":"84.232162594709084828","volumeUSD":"2433.555856311809224137160586223649","untrackedVolumeUSD":"2492.151129068869319922240191366878","trackedReserveETH":"84.23216259470908482800000000000001","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x8803805547b4b7dd1e4d9492a43bf6418447fcb0"},"reserve0":"42.116081297354542414","reserve1":"57895294.076746386259836623","token0Price":"0.0000007274525843417460733577409077864001","token1Price":"1374660.041801728383870131869581626","totalSupply":"21905.969047233404997839","txCount":"25","timestamp":"1635763244","oneDay":{"untrackedVolumeUSD":"44.82092239377998863856842357982042","volumeUSD":"42.40219892614869840540648666146222","reserveUSD":"54324.92576942124367651027312704166","txCount":"21"},"sevenDay":{"untrackedVolumeUSD":"13.00109378855071842475423689015005","volumeUSD":"10.05550409237585086487145028396203","reserveUSD":"194.9847904328704851350444550100704","txCount":"21"}},"Token:0xff3ed63bf8bc9303ea0a7e1215ba2f82d569799e":{"id":"0xff3ed63bf8bc9303ea0a7e1215ba2f82d569799e","__typename":"Token","name":"ORB - Enter The Sphere","symbol":"ORB","totalSupply":"24472","derivedETH":"0.000009711876760531646989007280372329383"},"Pair:0x1ee39f93450d80981c169e59c8a641a3bc853a09":{"id":"0x1ee39f93450d80981c169e59c8a641a3bc853a09","__typename":"Pair","reserveUSD":"53037.63824789977422598954437649307","reserveETH":"73.998754716702357502","volumeUSD":"128859.1276825530311024538323452573","untrackedVolumeUSD":"128946.1051301597028460353759401439","trackedReserveETH":"73.998754716702357502","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xff3ed63bf8bc9303ea0a7e1215ba2f82d569799e"},"reserve0":"36.999377358351178751","reserve1":"3809704.166419607758893609","token0Price":"0.000009711876760531646989007280372329383","token1Price":"102966.7102103196435689427311865061","totalSupply":"11800.707803998784866327","txCount":"912","timestamp":"1633237988","oneDay":{"untrackedVolumeUSD":"127094.2450678321137634186655709577","volumeUSD":"127007.2676202254420198371219760711","reserveUSD":"52491.81664929816104975670092345907","txCount":"896"},"sevenDay":{"untrackedVolumeUSD":"119274.9517419155997909620921268619","volumeUSD":"119187.9742943089280473805485319753","reserveUSD":"47052.57722032392027486413838049641","txCount":"896"}},"Token:0x265bd28d79400d55a1665707fa14a72978fa6043":{"id":"0x265bd28d79400d55a1665707fa14a72978fa6043","__typename":"Token","name":"CashCats","symbol":"$CATS","totalSupply":"24472","derivedETH":"0.000009930910131771802412461630304839046"},"Pair:0xc47b0b4b51ee06de0daf02517d78f0473b776633":{"id":"0xc47b0b4b51ee06de0daf02517d78f0473b776633","__typename":"Pair","reserveUSD":"48863.35092592062520774640644323248","reserveETH":"68.17473853007649177","volumeUSD":"532469.3739202199193510780412114542","untrackedVolumeUSD":"533877.2080222949762681673895395992","trackedReserveETH":"68.17473853007649177","token0":{"__ref":"Token:0x265bd28d79400d55a1665707fa14a72978fa6043"},"token1":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"reserve0":"3432451.69","reserve1":"34.087369265038245885","token0Price":"100695.705301039423103015531458131","token1Price":"0.000009930910131771802412461630304839046","totalSupply":"0.000104421902511363","txCount":"3286","timestamp":"1633287930","oneDay":{"untrackedVolumeUSD":"516127.0005291143653098183556468951","volumeUSD":"514719.1664270393083927290073187501","reserveUSD":"50973.20903713341175862448124631357","txCount":"3183"},"sevenDay":{"untrackedVolumeUSD":"391487.918698324398344096703561432","volumeUSD":"390080.084596249341427007355233287","reserveUSD":"34130.52873995863031954124653121","txCount":"3183"}},"Token:0x3d13dafcca3a188db340c81414239bc2be312ec9":{"id":"0x3d13dafcca3a188db340c81414239bc2be312ec9","__typename":"Token","name":"AxieBCH","symbol":"AXIEBCH","totalSupply":"34472","derivedETH":"0.000007541287502992949186940413060116257"},"Pair:0xd6ecadb40b35d17f739ec27285759d0ca119e3a1":{"id":"0xd6ecadb40b35d17f739ec27285759d0ca119e3a1","__typename":"Pair","reserveUSD":"47534.79282033238972969035391369313","reserveETH":"66.628862558077395826","volumeUSD":"280077.062150921038068910881422522","untrackedVolumeUSD":"280292.0837485473379097995119802331","trackedReserveETH":"66.62886255807739582599999999999999","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x3d13dafcca3a188db340c81414239bc2be312ec9"},"reserve0":"33.314431279038697913","reserve1":"4417605.251864092154848846","token0Price":"0.000007541287502992949186940413060116257","token1Price":"132603.3518286002099719732825688116","totalSupply":"11870.29767610770170387","txCount":"1635","timestamp":"1633265965","oneDay":{"untrackedVolumeUSD":"264480.448620343621408391157339713","volumeUSD":"264265.4270227173215675025267820019","reserveUSD":"40159.793145260883759441916549131","txCount":"1581"},"sevenDay":{"untrackedVolumeUSD":"233747.9932523095651317767726428206","volumeUSD":"233532.9716546832652908881420851095","reserveUSD":"45426.96421354027083903046143122836","txCount":"1581"}},"Token:0xc70c7718c7f1ccd906534c2c4a76914173ec2c44":{"id":"0xc70c7718c7f1ccd906534c2c4a76914173ec2c44","__typename":"Token","name":"Knuth","symbol":"KTH","totalSupply":"24472","derivedETH":"0.000003080720815763943281014249268876774"},"Pair:0xc98552ad7dfc5daabad2660df378e0070ca75efc":{"id":"0xc98552ad7dfc5daabad2660df378e0070ca75efc","__typename":"Pair","reserveUSD":"44633.51743057645989081567065074077","reserveETH":"62.339624700071982138","volumeUSD":"201689.4337146651945839773183385042","untrackedVolumeUSD":"201689.4337146651945839773183385042","trackedReserveETH":"62.33962470007198213800000000000001","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xc70c7718c7f1ccd906534c2c4a76914173ec2c44"},"reserve0":"31.169812350035991069","reserve1":"10117701.08818076762446705","token0Price":"0.000003080720815763943281014249268876774","token1Price":"324599.3583329700394094266130651468","totalSupply":"17609.712841469166882679","txCount":"2957","timestamp":"1633238076","oneDay":{"untrackedVolumeUSD":"201374.621684943021029907414773332","volumeUSD":"201374.621684943021029907414773332","reserveUSD":"42409.32168177421685356802556579438","txCount":"2947"},"sevenDay":{"untrackedVolumeUSD":"195584.9490074654585259032930622968","volumeUSD":"195584.9490074654585259032930622968","reserveUSD":"37492.03001009678324289562197308649","txCount":"2947"}},"Token:0xffa2394b61d3de16538a2bbf3491297cc5a7c79a":{"id":"0xffa2394b61d3de16538a2bbf3491297cc5a7c79a","__typename":"Token","name":"UatX Token","symbol":"UAT","totalSupply":"34472","derivedETH":"0.0000005187943562979238147594718291735919"},"Pair:0xf9d33abfaf59fd19077f44399a8971621cd2ea55":{"id":"0xf9d33abfaf59fd19077f44399a8971621cd2ea55","__typename":"Pair","reserveUSD":"34164.02730567130331334549999774062","reserveETH":"51.065852362650116548","volumeUSD":"36456.5351888826674822828478556753","untrackedVolumeUSD":"36461.65245518324406997902735114648","trackedReserveETH":"51.065852362650116548","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xffa2394b61d3de16538a2bbf3491297cc5a7c79a"},"reserve0":"25.532926181325058274","reserve1":"49215890.403137833015116874","token0Price":"0.0000005187943562979238147594718291735919","token1Price":"1927546.026398440877970759773447362","totalSupply":"31709.985045814021179224","txCount":"267","timestamp":"1633279788","oneDay":{"untrackedVolumeUSD":"36461.65245518324406997902735114648","volumeUSD":"36456.5351888826674822828478556753","reserveUSD":"34164.02730567130331334549999774062","txCount":"267"},"sevenDay":{"untrackedVolumeUSD":"33614.58189590165594498429980192438","volumeUSD":"33609.4646296010793572881203064532","reserveUSD":"30507.65443851973920118282463943105","txCount":"267"}},"Token:0x9288df32951386a8254aeaf80a66b78ccaf75b82":{"id":"0x9288df32951386a8254aeaf80a66b78ccaf75b82","__typename":"Token","name":"Smart BUSD","symbol":"sBUSD","totalSupply":"24472","derivedETH":"0.001440035001774990235432539162190924"},"Pair:0x64c379ab93b859ada71b8abaca77bed104a5dbca":{"id":"0x64c379ab93b859ada71b8abaca77bed104a5dbca","__typename":"Pair","reserveUSD":"22235.97632273262727050094346976211","reserveETH":"32.28682316989680757","volumeUSD":"10042.06636829547045640041140134226","untrackedVolumeUSD":"10571.50588891718630969719668696417","trackedReserveETH":"32.28682316989680757000000000000001","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x9288df32951386a8254aeaf80a66b78ccaf75b82"},"reserve0":"16.143411584948403785","reserve1":"11210.43","token0Price":"0.001440035001774990235432539162190924","token1Price":"694.4275651407068943880195580217455","totalSupply":"0.000000670982152544","txCount":"211","timestamp":"1633259245","oneDay":{"untrackedVolumeUSD":"10571.50588891718630969719668696417","volumeUSD":"10042.06636829547045640041140134226","reserveUSD":"22235.97632273262727050094346976211","txCount":"211"},"sevenDay":{"untrackedVolumeUSD":"8904.874576293067723495182536987965","volumeUSD":"8375.435055671351870198397251366039","reserveUSD":"23153.86704671592882365969720552694","txCount":"211"}},"Pair:0x49260567a5610414954a1d8f0e7774104fc5caed":{"id":"0x49260567a5610414954a1d8f0e7774104fc5caed","__typename":"Pair","reserveUSD":"18384.70754322470708435152493314156","reserveETH":"25.73892873813884571315776743693691","volumeUSD":"9263.910082555301938119182228317733","untrackedVolumeUSD":"9462.418387314520012142085605803826","trackedReserveETH":"25.73892873813884571315776743693691","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x98dd7ec28fb43b3c4c770ae532417015fa939dd3"},"reserve0":"12.875353541990497154","reserve1":"3361.278029205530933367","token0Price":"0.003830493470078613439161757568785719","token1Price":"261.0629695132927460985278718585024","totalSupply":"202.527786463040420835","txCount":"251","timestamp":"1633259746","oneDay":{"untrackedVolumeUSD":"9111.222859698208457413735232239277","volumeUSD":"8912.714554938990383390831854753184","reserveUSD":"17826.92492962144170346350467977022","txCount":"242"},"sevenDay":{"untrackedVolumeUSD":"6829.903763953414477462765099580287","volumeUSD":"6631.395459194196403439861722094193","reserveUSD":"19097.10702657917495803243799667276","txCount":"242"}},"Token:0x741746c2cf4117730d7f087e8492df595b4fd283":{"id":"0x741746c2cf4117730d7f087e8492df595b4fd283","__typename":"Token","name":"DOGEBCH","symbol":"DOGE","totalSupply":"34472","derivedETH":"0.000000000180685198569363662767618875440917"},"Pair:0xcfcbc90e617a3996355761b52df2830b7b6718d0":{"id":"0xcfcbc90e617a3996355761b52df2830b7b6718d0","__typename":"Pair","reserveUSD":"16177.03845536653927270820683930852","reserveETH":"23.06182398917194809","volumeUSD":"41228.61677564156323833507683291984","untrackedVolumeUSD":"41546.08136812162834188751673970008","trackedReserveETH":"23.06182398917194809","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x741746c2cf4117730d7f087e8492df595b4fd283"},"reserve0":"11.530911994585974045","reserve1":"63817690026.000360596377662472","token0Price":"0.000000000180685198569363662767618875440917","token1Price":"5534487649.889637556899845657533294","totalSupply":"853939.766621047625116259","txCount":"157","timestamp":"1633974919","oneDay":{"untrackedVolumeUSD":"39498.90074664878562723743849389037","volumeUSD":"39199.89188223129762376304217452891","reserveUSD":"13922.68318979196525020706688814284","txCount":"155"},"sevenDay":{"untrackedVolumeUSD":"39496.74258918382373391036324876382","volumeUSD":"39197.73285164688918550300682606437","reserveUSD":"14007.14554917689931330486735365895","txCount":"155"}},"Token:0x2f309b9d47b1ce7f0ec30a26bab2deab8c4ea5e9":{"id":"0x2f309b9d47b1ce7f0ec30a26bab2deab8c4ea5e9","__typename":"Token","name":"ShibaCash","symbol":"Shiba","totalSupply":"24472","derivedETH":"0.000000000000208675092853050389238936470077805"},"Pair:0x12e03015a85a0c2c1eca69486147608abb0b801c":{"id":"0x12e03015a85a0c2c1eca69486147608abb0b801c","__typename":"Pair","reserveUSD":"14031.57916207107955607845832277891","reserveETH":"19.5770292166732965630790562581526","volumeUSD":"74161.05895004217557550686643319634","untrackedVolumeUSD":"74161.05895004217557550686643319634","trackedReserveETH":"19.5770292166732965630790562581526","token0":{"__ref":"Token:0x2f309b9d47b1ce7f0ec30a26bab2deab8c4ea5e9"},"token1":{"__ref":"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72"},"reserve0":"47283943962740.942841688079559934","reserve1":"6959.549538539740732941","token0Price":"6794109834.393405968740002449886852","token1Price":"0.000000000147186316438065405669803355180962","totalSupply":"561409947.240748741602110064","txCount":"698","timestamp":"1634170543","oneDay":{"untrackedVolumeUSD":"73659.18142673747109709030253605884","volumeUSD":"73659.18142673747109709030253605884","reserveUSD":"13568.92149758476003022049468090719","txCount":"683"},"sevenDay":{"untrackedVolumeUSD":"64972.17196155532273436677952349986","volumeUSD":"64972.17196155532273436677952349986","reserveUSD":"15343.24558836062870549136108168746","txCount":"683"}},"Pair:0xfcf26e0eb200692b3002f941eea0486d2e901aa9":{"id":"0xfcf26e0eb200692b3002f941eea0486d2e901aa9","__typename":"Pair","reserveUSD":"12001.6704201265994441270498857508","reserveETH":"16.822575663944306198","volumeUSD":"91520.64141681371473068800756947467","untrackedVolumeUSD":"98642.3606212914146344436305421349","trackedReserveETH":"16.822575663944306198","token0":{"__ref":"Token:0x2f309b9d47b1ce7f0ec30a26bab2deab8c4ea5e9"},"token1":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"reserve0":"40308058412584.038447096495420357","reserve1":"8.411287831972153099","token0Price":"4792138756608.594994116715189459143","token1Price":"0.000000000000208675092853050389238936470077805","totalSupply":"17615669.809872002708295224","txCount":"1389","timestamp":"1633635568","oneDay":{"untrackedVolumeUSD":"98236.33249814700913324346079955913","volumeUSD":"91114.6132936693092294878378268989","reserveUSD":"11276.24184718091534046570842449174","txCount":"1381"},"sevenDay":{"untrackedVolumeUSD":"88215.61815209215450867570814194239","volumeUSD":"81093.89894761445460492008516928216","reserveUSD":"10433.24332013073290867572288675323","txCount":"1381"}},"Token:0x0b00366fbf7037e9d75e4a569ab27dab84759302":{"id":"0x0b00366fbf7037e9d75e4a569ab27dab84759302","__typename":"Token","name":"LAWTOKEN","symbol":"LAW","totalSupply":"24472","derivedETH":"0.0005518356837074525495112508571419937"},"Pair:0x24615e918ad078900bfe13f4cd26876bae64dd75":{"id":"0x24615e918ad078900bfe13f4cd26876bae64dd75","__typename":"Pair","reserveUSD":"11867.31312679926198920612937799877","reserveETH":"16.557419027700368518","volumeUSD":"27205.11487271613636816863835440336","untrackedVolumeUSD":"30743.73450316544632655911946387763","trackedReserveETH":"16.557419027700368518","token0":{"__ref":"Token:0x0b00366fbf7037e9d75e4a569ab27dab84759302"},"token1":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"reserve0":"15002.127912842654321369","reserve1":"8.278709513850184259","token0Price":"1812.133628767173151928250270798357","token1Price":"0.0005518356837074525495112508571419937","totalSupply":"346.313844947012411731","txCount":"529","timestamp":"1633478424","oneDay":{"untrackedVolumeUSD":"28200.4336835902293228835807218021","volumeUSD":"24661.81405314091936449309961232784","reserveUSD":"9038.357092128906300590744216624298","txCount":"501"},"sevenDay":{"untrackedVolumeUSD":"17612.04354667845675917060313313079","volumeUSD":"14073.42391622914680078012202365653","reserveUSD":"15799.41726866008267777279455567979","txCount":"501"}},"Token:0x6732e55ac3eca734f54c26bd8df4eed52fb79a6e":{"id":"0x6732e55ac3eca734f54c26bd8df4eed52fb79a6e","__typename":"Token","name":"Joystick","symbol":"JOY","totalSupply":"34472","derivedETH":"0.00007700548757407391490926845955128004"},"Pair:0x20943ad7855bde06dd41bb89c9d2efe05db329ec":{"id":"0x20943ad7855bde06dd41bb89c9d2efe05db329ec","__typename":"Pair","reserveUSD":"10625.89166111080324386876948254954","reserveETH":"14.825372760970605964","volumeUSD":"21245.07007797301408686020725935697","untrackedVolumeUSD":"21744.03520088748547116540592157868","trackedReserveETH":"14.825372760970605964","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x6732e55ac3eca734f54c26bd8df4eed52fb79a6e"},"reserve0":"7.412686380485302982","reserve1":"96261.793983900368729216","token0Price":"0.00007700548757407391490926845955128004","token1Price":"12986.0875049725470428630063116151","totalSupply":"-307.230557416406872329","txCount":"236","timestamp":"1634962330","oneDay":{"untrackedVolumeUSD":"10115.08020662383671149948014575462","volumeUSD":"9616.115083709365327194281483532918","reserveUSD":"11817.7327805453746654832525997796","txCount":"161"},"sevenDay":{"untrackedVolumeUSD":"5678.451487299747272023512015674481","volumeUSD":"5179.486364385275887718313353452775","reserveUSD":"11325.41809997181972585894865936536","txCount":"161"}},"Pair:0xa331430473aba2337698fd95a7c2fcf376debfb1":{"id":"0xa331430473aba2337698fd95a7c2fcf376debfb1","__typename":"Pair","reserveUSD":"10362.20348557465378882043647940293","reserveETH":"14.977156502698821568","volumeUSD":"7625.670237517070531016844499408327","untrackedVolumeUSD":"8179.786808506288178932935791160068","trackedReserveETH":"14.977156502698821568","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xc41c680c60309d4646379ed62020c534eb67b6f4"},"reserve0":"7.488578251349410784","reserve1":"292433.714702429392089867","token0Price":"0.00002560778007067185624222163596586467","token1Price":"39050.63216101588414727120485605897","totalSupply":"1467.676197950083055031","txCount":"399","timestamp":"1633602565","oneDay":{"untrackedVolumeUSD":"6818.911194154235226052747431017921","volumeUSD":"6264.79462316501757813665613926618","reserveUSD":"10320.59212423793008752168592817616","txCount":"381"},"sevenDay":{"untrackedVolumeUSD":"5799.985814307433519026041047947486","volumeUSD":"5245.869243318215871109949756195745","reserveUSD":"7118.148687751974602676458491739068","txCount":"381"}},"Token:0x481de06dca0198844faa36fca04db364e5c2f86c":{"id":"0x481de06dca0198844faa36fca04db364e5c2f86c","__typename":"Token","name":"MAZE","symbol":"MAZE","totalSupply":"34472","derivedETH":"0.000001044626921788983178266823281825883"},"Pair:0x1c47c2a72e86b9b488f436f7ac76acc61e531926":{"id":"0x1c47c2a72e86b9b488f436f7ac76acc61e531926","__typename":"Pair","reserveUSD":"10325.39149867116274557161901508924","reserveETH":"14.406111171331186002","volumeUSD":"6262.201059973935038757373153038789","untrackedVolumeUSD":"6737.859334922533183286089087260326","trackedReserveETH":"14.406111171331186002","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x481de06dca0198844faa36fca04db364e5c2f86c"},"reserve0":"7.203055585665593001","reserve1":"6895337.881327","token0Price":"0.000001044626921788983178266823281825883","token1Price":"957279.5599480080126159745500438045","totalSupply":"0.007013212661573956","txCount":"310","timestamp":"1633285385","oneDay":{"untrackedVolumeUSD":"6676.087307898047729144522857561405","volumeUSD":"6200.429032949449584615806923339868","reserveUSD":"10180.9545004948672772808075065055","txCount":"306"},"sevenDay":{"untrackedVolumeUSD":"5600.959386180135068001316621400559","volumeUSD":"5125.301111231536923472600687179022","reserveUSD":"7740.818332142168604976886970233985","txCount":"306"}},"Pair:0xe3e155c22685f7ceab3f429ca60f302bcfb13616":{"id":"0xe3e155c22685f7ceab3f429ca60f302bcfb13616","__typename":"Pair","reserveUSD":"9889.308417774294872378428498188226","reserveETH":"13.82302172528529635766285181204087","volumeUSD":"5925.640221572291495690097256378764","untrackedVolumeUSD":"6748.295648538082674751064988820792","trackedReserveETH":"13.82302172528529635766285181204087","token0":{"__ref":"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72"},"token1":{"__ref":"Token:0xb5b1939ef0a3743d0ae9282dba62312b614a5ac0"},"reserve0":"4938.081012486403323958","reserve1":"90462830.628909752069335152","token0Price":"0.00005458685051259396485646833188758085","token1Price":"18319.43024024230413080646980188647","totalSupply":"662727.815578621541827158","txCount":"118","timestamp":"1633800997","oneDay":{"untrackedVolumeUSD":"6573.37673611552186964987016220548","volumeUSD":"5750.721309149730690588902429763452","reserveUSD":"10026.48286301086871198191720174023","txCount":"111"},"sevenDay":{"untrackedVolumeUSD":"5965.107801084465983137941928366737","volumeUSD":"5142.452374118674804076974195924709","reserveUSD":"9361.275449218502358444431110594743","txCount":"111"}},"Token:0x7ebeadb95724a006afaf2f1f051b13f4ebebf711":{"id":"0x7ebeadb95724a006afaf2f1f051b13f4ebebf711","__typename":"Token","name":"CashKitten","symbol":"$KITTEN","totalSupply":"34472","derivedETH":"0.00000002799172182223318551626725833992311"},"Pair:0x6b68f5d7d0531207a01e9ac16cfcd223d2139d28":{"id":"0x6b68f5d7d0531207a01e9ac16cfcd223d2139d28","__typename":"Pair","reserveUSD":"8437.873249350114605528971829142659","reserveETH":"11.827250391905577858","volumeUSD":"2793.739132218309942570807013282501","untrackedVolumeUSD":"8951.525039948734069915651139026558","trackedReserveETH":"11.827250391905577858","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x7ebeadb95724a006afaf2f1f051b13f4ebebf711"},"reserve0":"5.913625195952788929","reserve1":"211263359.7","token0Price":"0.00000002799172182223318551626725833992311","token1Price":"35724847.73715216163371184338424762","totalSupply":"0.000346795431786159","txCount":"570","timestamp":"1633272563","oneDay":{"untrackedVolumeUSD":"8404.422883725592095379947531828078","volumeUSD":"2246.636975995167968035103406084022","reserveUSD":"8987.121310625935972751993903622997","txCount":"563"},"sevenDay":{"untrackedVolumeUSD":"7920.423490931914052817182608257485","volumeUSD":"1762.637583201489925472338482513429","reserveUSD":"4616.781727112756197566433986992274","txCount":"563"}},"Token:0x5a3bb59f34d60e9eb5643fb80c8d712275f6a96a":{"id":"0x5a3bb59f34d60e9eb5643fb80c8d712275f6a96a","__typename":"Token","name":"Alpha","symbol":"PHA","totalSupply":"34472","derivedETH":"0.000005977177330962919928890919813692572"},"Pair:0x211c0d74b1213a40bdfd61490a9893353544ea46":{"id":"0x211c0d74b1213a40bdfd61490a9893353544ea46","__typename":"Pair","reserveUSD":"5795.475871546618091519421152187792","reserveETH":"8.216650076084735682","volumeUSD":"632.2121058708362171756538101322139","untrackedVolumeUSD":"2327.213367687348729301329123758563","trackedReserveETH":"8.216650076084735682","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x5a3bb59f34d60e9eb5643fb80c8d712275f6a96a"},"reserve0":"4.108325038042367841","reserve1":"687335.31072609468196444","token0Price":"0.000005977177330962919928890919813692572","token1Price":"167303.0503578685959190317672788794","totalSupply":"1665.67962816692266993","txCount":"249","timestamp":"1633385603","oneDay":{"untrackedVolumeUSD":"2255.781956004611321929065578682583","volumeUSD":"560.7806941880988098033902650562342","reserveUSD":"5654.615329367056792346254939551722","txCount":"243"},"sevenDay":{"untrackedVolumeUSD":"1255.884711679253585045704628174844","volumeUSD":"0","reserveUSD":"1096.700174930941145598840467674699","txCount":"243"}},"Token:0x4f1480ba79f7477230ec3b2ecc868e8221925072":{"id":"0x4f1480ba79f7477230ec3b2ecc868e8221925072","__typename":"Token","name":"Konra SEP20","symbol":"KONRA","totalSupply":"34472","derivedETH":"0.01152692749665188957580037423792855"},"Pair:0xa32b73445dbc075da5054503171362d790164dc9":{"id":"0xa32b73445dbc075da5054503171362d790164dc9","__typename":"Pair","reserveUSD":"4142.526175360707908077931069120847","reserveETH":"5.806521724510097471999999999999999","volumeUSD":"1346.341005428662306876565071581817","untrackedVolumeUSD":"4296.924216509871408491524159661022","trackedReserveETH":"5.806521724510097471999999999999999","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x4f1480ba79f7477230ec3b2ecc868e8221925072"},"reserve0":"2.903260862255048736","reserve1":"251.867712631863924726","token0Price":"0.01152692749665188957580037423792855","token1Price":"86.75338682319810884187239350533084","totalSupply":"26.686580007646824733","txCount":"512","timestamp":"1633533911","oneDay":{"untrackedVolumeUSD":"4087.981857518398682467159617952001","volumeUSD":"1137.398646437189580852200529872796","reserveUSD":"3791.436944936053892215051729768174","txCount":"491"},"sevenDay":{"untrackedVolumeUSD":"2890.137310820146842970440444594529","volumeUSD":"0","reserveUSD":"1745.678520138422994152218210298324","txCount":"491"}},"Token:0xb24d7763516bca9656779d760be9a32490f46e27":{"id":"0xb24d7763516bca9656779d760be9a32490f46e27","__typename":"Token","name":"HODL","symbol":"HODL","totalSupply":"34472","derivedETH":"0"},"Pair:0x98a03761fe62b9a1fd7888d86f70e94a40acd511":{"id":"0x98a03761fe62b9a1fd7888d86f70e94a40acd511","__typename":"Pair","reserveUSD":"1790.175711381102589201503781792587","reserveETH":"2.616207554313191383","volumeUSD":"0","untrackedVolumeUSD":"1093.716117917946774949938659511009","trackedReserveETH":"2.616207554313191383","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xb24d7763516bca9656779d760be9a32490f46e27"},"reserve0":"2.616207554313191383","reserve1":"1089270694.807387039194538246","token0Price":"0.000000002401797429036506574760709457412289","token1Price":"416354846.5455536594579313422828147","totalSupply":"53115.183181101821247192","txCount":"115","timestamp":"1633859320","oneDay":{"untrackedVolumeUSD":"1093.716117917946774949938659511009","volumeUSD":"0","reserveUSD":"1790.175711381102589201503781792587","txCount":"115"},"sevenDay":{"untrackedVolumeUSD":"591.4570545452688482516113692137688","volumeUSD":"0","reserveUSD":"1025.229704832997672355431372404088","txCount":"115"}},"Token:0x80453acdfe0073d6743b27d72e06f48777eead80":{"id":"0x80453acdfe0073d6743b27d72e06f48777eead80","__typename":"Token","name":"ZOMBIE","symbol":"ZOMBIE","totalSupply":"34472","derivedETH":"0"},"Pair:0x8e5edb62775c1cd003804ec2a8242e5e0393876b":{"id":"0x8e5edb62775c1cd003804ec2a8242e5e0393876b","__typename":"Pair","reserveUSD":"1652.552653468375613163477340344196","reserveETH":"2.388540212938454028","volumeUSD":"0","untrackedVolumeUSD":"452.7373743580057679276502918611933","trackedReserveETH":"2.388540212938454028","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x80453acdfe0073d6743b27d72e06f48777eead80"},"reserve0":"2.388540212938454028","reserve1":"1148589","token0Price":"0.000002079542998355768711001063043438515","token1Price":"480874.8849101314720893008361076008","totalSupply":"0.000000077365054154","txCount":"153","timestamp":"1633261708","oneDay":{"untrackedVolumeUSD":"451.0077063326186679731524928769644","volumeUSD":"0","reserveUSD":"1561.628449347779681391173309927426","txCount":"150"},"sevenDay":{"untrackedVolumeUSD":"329.4799680537613888930175194537371","volumeUSD":"0","reserveUSD":"1118.929787445251852807898674003083","txCount":"150"}},"Token:0x252fd94f3fb53d3d62f4fec708501acd59a57e52":{"id":"0x252fd94f3fb53d3d62f4fec708501acd59a57e52","__typename":"Token","name":"HAM Token","symbol":"HAM","totalSupply":"24472","derivedETH":"0"},"Pair:0xe75ec02f28bc0e1ca1794fbffe8229ac1662075e":{"id":"0xe75ec02f28bc0e1ca1794fbffe8229ac1662075e","__typename":"Pair","reserveUSD":"1614.933402494831545436707429487474","reserveETH":"2.537566665436005417","volumeUSD":"0","untrackedVolumeUSD":"134.1497289397465773573581276056547","trackedReserveETH":"2.537566665436005417000000000000001","token0":{"__ref":"Token:0x252fd94f3fb53d3d62f4fec708501acd59a57e52"},"token1":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"reserve0":"563625.858639","reserve1":"2.537566665436005417","token0Price":"222112.7296145962126687141553417106","token1Price":"0.000004502218318306978583657956809076289","totalSupply":"0.011952907987367479","txCount":"28","timestamp":"1633365230","oneDay":{"untrackedVolumeUSD":"134.1497289397465773573581276056547","volumeUSD":"0","reserveUSD":"1614.933402494831545436707429487474","txCount":"28"},"sevenDay":{"untrackedVolumeUSD":"134.1497289397465773573581276056547","volumeUSD":"0","reserveUSD":"762.7397804066296550966085523895542","txCount":"28"}},"Token:0x84e3ae3135d79536e032ee36dacc15e676400638":{"id":"0x84e3ae3135d79536e032ee36dacc15e676400638","__typename":"Token","name":"PushingBCH","symbol":"PSN","totalSupply":"24472","derivedETH":"0"},"Pair:0xb9dd1a938f930321c9ab2bd24f777b876d5d050d":{"id":"0xb9dd1a938f930321c9ab2bd24f777b876d5d050d","__typename":"Pair","reserveUSD":"1083.573485990375956475815007470561","reserveETH":"1.793070052247958377390618098742993","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"3.586140104495916754781236197485988","token0":{"__ref":"Token:0x7ebeadb95724a006afaf2f1f051b13f4ebebf711"},"token1":{"__ref":"Token:0x84e3ae3135d79536e032ee36dacc15e676400638"},"reserve0":"64766500","reserve1":"154073000","token0Price":"0.4203624256034477163422533474392009","token1Price":"2.378899585433827673257007866721222","totalSupply":"0.998937883679459822","txCount":"1","timestamp":"1636037591","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"1083.573485990375956475815007470561","txCount":"1"},"sevenDay":{"untrackedVolumeUSD":"undefined","volumeUSD":"undefined","reserveUSD":"undefined","txCount":"1"}},"Token:0xafacb0004a91267b58e720e13df570dc6863c854":{"id":"0xafacb0004a91267b58e720e13df570dc6863c854","__typename":"Token","name":"SmartBCH Token Observer","symbol":"STO","totalSupply":"34472","derivedETH":"0"},"Pair:0xb02a135992478a485d9dd771092cdd8b4487594a":{"id":"0xb02a135992478a485d9dd771092cdd8b4487594a","__typename":"Pair","reserveUSD":"983.2853424409539078528988483739491","reserveETH":"1.383870000970770328","volumeUSD":"0","untrackedVolumeUSD":"688.0017927871464880251389758600712","trackedReserveETH":"2.767740001941540656","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xafacb0004a91267b58e720e13df570dc6863c854"},"reserve0":"1.383870000970770328","reserve1":"7637.789275156171463351","token0Price":"0.0001811872455649117199190587451813549","token1Price":"5519.15228294445445840654334556831","totalSupply":"102.579285973153948023","txCount":"77","timestamp":"1634537770","oneDay":{"untrackedVolumeUSD":"670.2928239206156342547921565325445","volumeUSD":"0","reserveUSD":"843.6942748708218479769429720191573","txCount":"73"},"sevenDay":{"untrackedVolumeUSD":"580.2623756517249182085119972655225","volumeUSD":"0","reserveUSD":"821.2887118822186718545309756532987","txCount":"73"}},"Token:0x2a886b947d5a8f0e09408c9069914fa44c06ed7e":{"id":"0x2a886b947d5a8f0e09408c9069914fa44c06ed7e","__typename":"Token","name":"VANDALS","symbol":"VANDALS","totalSupply":"24472","derivedETH":"0"},"Pair:0xf9cfd97572c5fbc7917f09b66ebb27a19f401048":{"id":"0xf9cfd97572c5fbc7917f09b66ebb27a19f401048","__typename":"Pair","reserveUSD":"577.5150446074577526603169136469014","reserveETH":"0.831514375268669715","volumeUSD":"0","untrackedVolumeUSD":"39.41370066551228102485167827415479","trackedReserveETH":"1.66302875053733943","token0":{"__ref":"Token:0x2a886b947d5a8f0e09408c9069914fa44c06ed7e"},"token1":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"reserve0":"662932.99366082","reserve1":"0.831514375268669715","token0Price":"797259.8109883794057087686989853371","token1Price":"0.000001254296261039772476340904565877299","totalSupply":"0.007420342372557733","txCount":"40","timestamp":"1633261597","oneDay":{"untrackedVolumeUSD":"39.41370066551228102485167827415479","volumeUSD":"0","reserveUSD":"577.5150446074577526603169136469014","txCount":"40"},"sevenDay":{"untrackedVolumeUSD":"28.17297333803699660345696013108232","volumeUSD":"0","reserveUSD":"382.8018929987484981578814814193088","txCount":"40"}},"Token:0x8128b9d0819eb2ec966eeec409122155aa78ad1f":{"id":"0x8128b9d0819eb2ec966eeec409122155aa78ad1f","__typename":"Token","name":"Floki BCH","symbol":"FlokiBCH","totalSupply":"34472","derivedETH":"0"},"Pair:0x512f57db93c40540dbf17e948f6f913684545cea":{"id":"0x512f57db93c40540dbf17e948f6f913684545cea","__typename":"Pair","reserveUSD":"507.7398456399666259268352029848798","reserveETH":"0.8637250112104623369073541401684455","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"1.727450022420924673814708280336892","token0":{"__ref":"Token:0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129"},"token1":{"__ref":"Token:0x8128b9d0819eb2ec966eeec409122155aa78ad1f"},"reserve0":"50000","reserve1":"6000000000000","token0Price":"0.000000008333333333333333333333333333333333","token1Price":"120000000","totalSupply":"547722557.505166113456968782","txCount":"1","timestamp":"1635735241","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"507.7398456399666259268352029848798","txCount":"1"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"507.7398456399666259268352029848798","txCount":"1"}},"Token:0xc2100c9486b320b6db2fc6d1f2beaab713ff069d":{"id":"0xc2100c9486b320b6db2fc6d1f2beaab713ff069d","__typename":"Token","name":"🌩️","symbol":"🌩️","totalSupply":"34472","derivedETH":"0"},"Pair:0x3dcafb52042ca0a98a5b9962e3ad995d9b654c94":{"id":"0x3dcafb52042ca0a98a5b9962e3ad995d9b654c94","__typename":"Pair","reserveUSD":"467.0516133256873211443994808211321","reserveETH":"0.666935632651080351","volumeUSD":"0","untrackedVolumeUSD":"85.15140201271742090999477225435209","trackedReserveETH":"1.333871265302160702","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xc2100c9486b320b6db2fc6d1f2beaab713ff069d"},"reserve0":"0.666935632651080351","reserve1":"86533.134656067344876094","token0Price":"0.000007707286177738362881563646600212567","token1Price":"129747.3555462866483728311163779648","totalSupply":"240.087288680130563188","txCount":"28","timestamp":"1633261989","oneDay":{"untrackedVolumeUSD":"85.15140201271742090999477225435209","volumeUSD":"0","reserveUSD":"467.0516133256873211443994808211321","txCount":"28"},"sevenDay":{"untrackedVolumeUSD":"82.40607621608983974330593608969128","volumeUSD":"0","reserveUSD":"410.6101172926688815198462553685265","txCount":"28"}},"Token:0xfc27a40259f5d36f647b1142443ed8941334c608":{"id":"0xfc27a40259f5d36f647b1142443ed8941334c608","__typename":"Token","name":"C4QNFT","symbol":"C4Q","totalSupply":"34472","derivedETH":"0"},"Pair:0xfec4202e22d0cd950afc52622114e787fffa0f53":{"id":"0xfec4202e22d0cd950afc52622114e787fffa0f53","__typename":"Pair","reserveUSD":"429.4723543027817462429263817821236","reserveETH":"0.644347783804799995","volumeUSD":"0","untrackedVolumeUSD":"1083.962088629547257826170921984351","trackedReserveETH":"1.28869556760959999","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xfc27a40259f5d36f647b1142443ed8941334c608"},"reserve0":"0.644347783804799995","reserve1":"657354.226443990069932324","token0Price":"0.0000009802139514496629008470457852579843","token1Price":"1020185.438618859706750621195357475","totalSupply":"644.851195210775493052","txCount":"125","timestamp":"1633428627","oneDay":{"untrackedVolumeUSD":"1083.962088629547257826170921984351","volumeUSD":"0","reserveUSD":"429.4723543027817462429263817821236","txCount":"125"},"sevenDay":{"untrackedVolumeUSD":"975.7907266959544688714747375271996","volumeUSD":"0","reserveUSD":"715.797414678701882997503855491376","txCount":"125"}},"Pair:0x64174291e424553337cab5526b8566f671a968d8":{"id":"0x64174291e424553337cab5526b8566f671a968d8","__typename":"Pair","reserveUSD":"385.6287143162537585658326497629017","reserveETH":"0.5573408775798979951578834190546044","volumeUSD":"0","untrackedVolumeUSD":"194.4607048264343486252617890981941","trackedReserveETH":"0.5573408775798979951578834190546044","token0":{"__ref":"Token:0x4f1480ba79f7477230ec3b2ecc868e8221925072"},"token1":{"__ref":"Token:0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129"},"reserve0":"23.498695701817279701","reserve1":"11413.530176818301995979","token0Price":"0.002058845540141893631603557086383972","token1Price":"485.7090930342841420180046389402148","totalSupply":"515.938550059638077699","txCount":"34","timestamp":"1633582001","oneDay":{"untrackedVolumeUSD":"130.6548514323495708445531127103019","volumeUSD":"0","reserveUSD":"337.5928123654503852168412566719515","txCount":"29"},"sevenDay":{"untrackedVolumeUSD":"82.81159497947404587892693348777175","volumeUSD":"0","reserveUSD":"150.3436279831927170352620472496344","txCount":"29"}},"Pair:0x58ecce662150f457e97764213bd5eebc16beca60":{"id":"0x58ecce662150f457e97764213bd5eebc16beca60","__typename":"Pair","reserveUSD":"337.3046230531664099726644450190067","reserveETH":"0.4744952877347855530632805534402433","volumeUSD":"0","untrackedVolumeUSD":"345.3594461320862042435281153443356","trackedReserveETH":"0.4744952877347855530632805534402433","token0":{"__ref":"Token:0x6732e55ac3eca734f54c26bd8df4eed52fb79a6e"},"token1":{"__ref":"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72"},"reserve0":"2988.670374044809143324","reserve1":"169.765203045848558478","token0Price":"17.60472888685944493269029279950219","token1Price":"0.05680291962612510854007324780898464","totalSupply":"707.106781186547523397","txCount":"60","timestamp":"1635426317","oneDay":{"untrackedVolumeUSD":"289.8120391659654345023917613623317","volumeUSD":"0","reserveUSD":"251.8991270758900748360761209211443","txCount":"52"},"sevenDay":{"untrackedVolumeUSD":"217.5670367075992053930828215816401","volumeUSD":"0","reserveUSD":"248.7031285220815606907228224218158","txCount":"52"}},"Pair:0xae2e976af611a9e5e088fde5bc65e705d1a83e46":{"id":"0xae2e976af611a9e5e088fde5bc65e705d1a83e46","__typename":"Pair","reserveUSD":"185.9800111481469560836154144238048","reserveETH":"0.2628058107854911220692024442494151","volumeUSD":"0","untrackedVolumeUSD":"130.5590208971697066623875130209022","trackedReserveETH":"0.2628058107854911220692024442494151","token0":{"__ref":"Token:0x3d13dafcca3a188db340c81414239bc2be312ec9"},"token1":{"__ref":"Token:0x4f1480ba79f7477230ec3b2ecc868e8221925072"},"reserve0":"18283.62128238683341103","reserve1":"12.393570037231558939","token0Price":"1475.250571664254512809373311067036","token1Price":"0.00067785094898955605835286342035828","totalSupply":"474.341649025256898799","txCount":"23","timestamp":"1634089459","oneDay":{"untrackedVolumeUSD":"122.4502990604474667822640079683955","volumeUSD":"0","reserveUSD":"158.7739372216840550954180048359191","txCount":"22"},"sevenDay":{"untrackedVolumeUSD":"92.90894380164898067435711198422822","volumeUSD":"0","reserveUSD":"93.64966382394468108250956178086286","txCount":"22"}},"Token:0x4f909dfe5daaf94fbd1fd4c2e582f7608c87cd94":{"id":"0x4f909dfe5daaf94fbd1fd4c2e582f7608c87cd94","__typename":"Token","name":"KAIJU","symbol":"KAIJU","totalSupply":"34472","derivedETH":"0"},"Pair:0x6fb2d514fd39614b97b95a6f811226989ce6078e":{"id":"0x6fb2d514fd39614b97b95a6f811226989ce6078e","__typename":"Pair","reserveUSD":"175.6110672032116566390979236296552","reserveETH":"0.298179158578634672","volumeUSD":"0","untrackedVolumeUSD":"27.80495609836050725740027571582724","trackedReserveETH":"0.5963583171572693439999999999999999","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x4f909dfe5daaf94fbd1fd4c2e582f7608c87cd94"},"reserve0":"0.298179158578634672","reserve1":"829906.857657806422883945","token0Price":"0.0000003592923179598332654253043386470049","token1Price":"2783249.042668911238876412484522588","totalSupply":"99.929992247438671544","txCount":"6","timestamp":"1635540059","oneDay":{"untrackedVolumeUSD":"27.80495609836050725740027571582724","volumeUSD":"0","reserveUSD":"175.6110672032116566390979236296552","txCount":"6"},"sevenDay":{"untrackedVolumeUSD":"27.80495609836050725740027571582724","volumeUSD":"0","reserveUSD":"175.6110672032116566390979236296552","txCount":"6"}},"Token:0x124559e3b63a89125cab76ca2add07a335f89d57":{"id":"0x124559e3b63a89125cab76ca2add07a335f89d57","__typename":"Token","name":"Fridge","symbol":"FRDG","totalSupply":"24472","derivedETH":"0"},"Pair:0x61950d3b4ee4773483d2b35dbd98da4c309226c1":{"id":"0x61950d3b4ee4773483d2b35dbd98da4c309226c1","__typename":"Pair","reserveUSD":"143.3473792859308063371122544771534","reserveETH":"0.2","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"0.4","token0":{"__ref":"Token:0x124559e3b63a89125cab76ca2add07a335f89d57"},"token1":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"reserve0":"10000000","reserve1":"0.2","token0Price":"50000000","token1Price":"0.00000002","totalSupply":"1414.213562373095047801","txCount":"1","timestamp":"1636561018","oneDay":{"untrackedVolumeUSD":"undefined","volumeUSD":"undefined","reserveUSD":"undefined","txCount":"undefined"},"sevenDay":{"untrackedVolumeUSD":"undefined","volumeUSD":"undefined","reserveUSD":"undefined","txCount":"undefined"}},"Pair:0x44ae7de88d22cc5288aab176d4d1f3d43d5d079c":{"id":"0x44ae7de88d22cc5288aab176d4d1f3d43d5d079c","__typename":"Pair","reserveUSD":"126.6422175027257043821111237692796","reserveETH":"0.1769060077331763990700807263489465","volumeUSD":"0","untrackedVolumeUSD":"52.80378974561415126811620846744162","trackedReserveETH":"0.1769060077331763990700807263489465","token0":{"__ref":"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72"},"token1":{"__ref":"Token:0xc70c7718c7f1ccd906534c2c4a76914173ec2c44"},"reserve0":"63.482534976424202169","reserve1":"28584.29735969198357019","token0Price":"0.002220888419176040655731583768574042","token1Price":"450.2702573283732939504711801171116","totalSupply":"1336.038921588738745269","txCount":"22","timestamp":"1633874302","oneDay":{"untrackedVolumeUSD":"48.7994012666607304636115754596971","volumeUSD":"0","reserveUSD":"121.5813770655530506705848940040979","txCount":"21"},"sevenDay":{"untrackedVolumeUSD":"43.00529006851832487371196663843986","volumeUSD":"0","reserveUSD":"130.8960303806970998102403888596233","txCount":"21"}},"Pair:0x2ad4118a28c8bede83dabbe8e914c9ef966ca509":{"id":"0x2ad4118a28c8bede83dabbe8e914c9ef966ca509","__typename":"Pair","reserveUSD":"66.83351897396150818492438236397751","reserveETH":"0.09908013614207798379968904051844203","volumeUSD":"0","untrackedVolumeUSD":"18.55448708909981726645639870193471","trackedReserveETH":"0.09908013614207798379968904051844203","token0":{"__ref":"Token:0x265bd28d79400d55a1665707fa14a72978fa6043"},"token1":{"__ref":"Token:0xf2d4d9c65c2d1080ac9e1895f6a32045741831cd"},"reserve0":"4704.87","reserve1":"6985895.38","token0Price":"0.0006734813140015847188367140992025563","token1Price":"1484.822190623757935925966073451551","totalSupply":"0.000000000018104539","txCount":"38","timestamp":"1634447602","oneDay":{"untrackedVolumeUSD":"18.55448708909981726645639870193471","volumeUSD":"0","reserveUSD":"66.83351897396150818492438236397751","txCount":"38"},"sevenDay":{"untrackedVolumeUSD":"0.5989340761167192185973631115685709","volumeUSD":"0","reserveUSD":"10.57785425329208296027159702800591","txCount":"38"}},"Token:0x0d8b355f9cedeb612f2df4b39cdd87059a244567":{"id":"0x0d8b355f9cedeb612f2df4b39cdd87059a244567","__typename":"Token","name":"CandyMan","symbol":"CandyMan","totalSupply":"24472","derivedETH":"0"},"Pair:0xcef44088b031ce75027a1269a65ce468dafcc66f":{"id":"0xcef44088b031ce75027a1269a65ce468dafcc66f","__typename":"Pair","reserveUSD":"59.62680223270841253395574515126957","reserveETH":"0.085003372027697221","volumeUSD":"0","untrackedVolumeUSD":"264.3259307532285417663068321260712","trackedReserveETH":"0.170006744055394442","token0":{"__ref":"Token:0x0d8b355f9cedeb612f2df4b39cdd87059a244567"},"token1":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"reserve0":"58473.34","reserve1":"0.085003372027697221","token0Price":"687894.3576608612414953854200509591","token1Price":"0.000001453711589378975461295694755934927","totalSupply":"0.000000021972867685","txCount":"79","timestamp":"1633262143","oneDay":{"untrackedVolumeUSD":"264.3259307532285417663068321260712","volumeUSD":"0","reserveUSD":"59.77602762856253120519731917754821","txCount":"78"},"sevenDay":{"untrackedVolumeUSD":"262.514179111893216388275593684312","volumeUSD":"0","reserveUSD":"56.77222079036777220894595907153673","txCount":"78"}},"Token:0x49f9ecf126b6ddf51c731614755508a4674ba7ed":{"id":"0x49f9ecf126b6ddf51c731614755508a4674ba7ed","__typename":"Token","name":"Xolos","symbol":"RMZ","totalSupply":"34472","derivedETH":"0"},"Pair:0xaaceda629026fe99a13600d1b6eb7f00185061f1":{"id":"0xaaceda629026fe99a13600d1b6eb7f00185061f1","__typename":"Pair","reserveUSD":"57.43801065534591702496675729806284","reserveETH":"0.080223788979098183","volumeUSD":"0","untrackedVolumeUSD":"62.80536201027529752645886707456943","trackedReserveETH":"0.080223788979098183","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x49f9ecf126b6ddf51c731614755508a4674ba7ed"},"reserve0":"0.080223788979098183","reserve1":"23.527715499824972023","token0Price":"0.003409756845270208484231694599051205","token1Price":"293.2760444156405306892147703251569","totalSupply":"0.998027397701844157","txCount":"49","timestamp":"1635432587","oneDay":{"untrackedVolumeUSD":"48.82789330323640935602406831196534","volumeUSD":"0","reserveUSD":"60.91412499448567962426572095347113","txCount":"40"},"sevenDay":{"untrackedVolumeUSD":"19.61518230040644917012541336036612","volumeUSD":"0","reserveUSD":"60.12539478297780397595024359943243","txCount":"40"}},"Pair:0xdb959a87fe712710f6a1120289caa62d8f7da8fe":{"id":"0xdb959a87fe712710f6a1120289caa62d8f7da8fe","__typename":"Pair","reserveUSD":"52.14693111396062928724253080553394","reserveETH":"0.07517404331974193579354650475354374","volumeUSD":"159.3198692368932217424655633406015","untrackedVolumeUSD":"230.6432323445567477211666302002137","trackedReserveETH":"0.07517404331974193579354650475354374","token0":{"__ref":"Token:0x481de06dca0198844faa36fca04db364e5c2f86c"},"token1":{"__ref":"Token:0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129"},"reserve0":"34830.762466","reserve1":"1518.124716558619232223","token0Price":"22.94328132997963903696202238034678","token1Price":"0.04358574458542314564969362792702524","totalSupply":"0.00725307952363663","txCount":"34","timestamp":"1633500255","oneDay":{"untrackedVolumeUSD":"226.4530244516007575299134096692816","volumeUSD":"159.3198692368932217424655633406015","reserveUSD":"41.34325018791318137120681623918242","txCount":"33"},"sevenDay":{"untrackedVolumeUSD":"224.5994620550261626217776268409543","volumeUSD":"159.3198692368932217424655633406015","reserveUSD":"76.08186001134313567072672482201282","txCount":"33"}},"Pair:0x8305de9fd7f4e1f9458a411344c8a3cd772dc6e5":{"id":"0x8305de9fd7f4e1f9458a411344c8a3cd772dc6e5","__typename":"Pair","reserveUSD":"50.59592322377072110263117070808859","reserveETH":"0.0709192512824278377612246318081039","volumeUSD":"0","untrackedVolumeUSD":"8.51514886185805320159065201854505","trackedReserveETH":"0.07091925128242783776122463180810389","token0":{"__ref":"Token:0x49f9ecf126b6ddf51c731614755508a4674ba7ed"},"token1":{"__ref":"Token:0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129"},"reserve0":"18.948925373910695317","reserve1":"2871.657799065781540005","token0Price":"0.006598601469880997178811823804460448","token1Price":"151.5472641535410914848932609713983","totalSupply":"232.955582751714832956","txCount":"6","timestamp":"1635450882","oneDay":{"untrackedVolumeUSD":"4.441154463261084628681372279656516","volumeUSD":"0","reserveUSD":"43.511837079352359409286822485094","txCount":"4"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"61.74846812638282240662287309194762","txCount":"4"}},"Token:0x2999b9d5f6402514ed29441dbd7b4469c2e182b6":{"id":"0x2999b9d5f6402514ed29441dbd7b4469c2e182b6","__typename":"Token","name":"DOTORI","symbol":"DOTO","totalSupply":"24472","derivedETH":"0"},"Pair:0x22d8267e9ac06840c7ba240b4f45495361343821":{"id":"0x22d8267e9ac06840c7ba240b4f45495361343821","__typename":"Pair","reserveUSD":"19.76780024631944820299690068035614","reserveETH":"0.034","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"0.06800000000000000000000000000000001","token0":{"__ref":"Token:0x2999b9d5f6402514ed29441dbd7b4469c2e182b6"},"token1":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"reserve0":"2000000","reserve1":"0.034","token0Price":"58823529.41176470588235294117647059","token1Price":"0.000000017","totalSupply":"260.768096208105947583","txCount":"1","timestamp":"1635515336","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"19.76780024631944820299690068035614","txCount":"1"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"19.76780024631944820299690068035614","txCount":"1"}},"Token:0xee1ba4e4c266c7cc071f5de5e6dc90965e608087":{"id":"0xee1ba4e4c266c7cc071f5de5e6dc90965e608087","__typename":"Token","name":"NomadCoin","symbol":"NOMAD","totalSupply":"34472","derivedETH":"0"},"Pair:0x90878806cf6af041b2953bbe7d4c6f78201cce66":{"id":"0x90878806cf6af041b2953bbe7d4c6f78201cce66","__typename":"Pair","reserveUSD":"17.860518127403634746","reserveETH":"0.0249458228264183228867179624346027","volumeUSD":"0","untrackedVolumeUSD":"68.0862853937872734045","trackedReserveETH":"0.0249458228264183228867179624346027","token0":{"__ref":"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72"},"token1":{"__ref":"Token:0xee1ba4e4c266c7cc071f5de5e6dc90965e608087"},"reserve0":"17.860518127403634746","reserve1":"40701.262417984641760554","token0Price":"0.0004388197580700007624249527242891998","token1Price":"2278.83996016532934996964756137943","totalSupply":"843.208159353311759865","txCount":"63","timestamp":"1634572476","oneDay":{"untrackedVolumeUSD":"67.690575850341869011","volumeUSD":"0","reserveUSD":"17.069099040512825959","txCount":"62"},"sevenDay":{"untrackedVolumeUSD":"64.5035079285194641565","volumeUSD":"0","reserveUSD":"17.03614666799620621","txCount":"62"}},"Token:0x09a4cdb1569563ff277ac457ced35fe2551aec1d":{"id":"0x09a4cdb1569563ff277ac457ced35fe2551aec1d","__typename":"Token","name":"Cheese","symbol":"CHEESE","totalSupply":"24472","derivedETH":"0"},"Pair:0xc76a02ac79e94346e0314bc9b7f115033ef23af9":{"id":"0xc76a02ac79e94346e0314bc9b7f115033ef23af9","__typename":"Pair","reserveUSD":"11.42960934599865002227059014415534","reserveETH":"0.018745858121964642","volumeUSD":"0","untrackedVolumeUSD":"180.7657754715189269221293787240057","trackedReserveETH":"0.01874585812196464199999999999999999","token0":{"__ref":"Token:0x09a4cdb1569563ff277ac457ced35fe2551aec1d"},"token1":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"reserve0":"5132611.945340443138776219","reserve1":"0.018745858121964642","token0Price":"273799786.1685792263575720038347547","token1Price":"0.000000003652303801962421733384247692653452","totalSupply":"302.583419075514589624","txCount":"130","timestamp":"1634014304","oneDay":{"untrackedVolumeUSD":"180.7657754715189269221293787240057","volumeUSD":"0","reserveUSD":"11.42960934599865002227059014415534","txCount":"130"},"sevenDay":{"untrackedVolumeUSD":"176.5574050438582040910920351135738","volumeUSD":"0","reserveUSD":"8.742946809307749619680348816234883","txCount":"130"}},"Token:0x039bcd43b18a29aa72cabfe269ba045447c881e4":{"id":"0x039bcd43b18a29aa72cabfe269ba045447c881e4","__typename":"Token","name":"MoonMoon","symbol":"MM","totalSupply":"24472","derivedETH":"0"},"Pair:0x7ec72bd532dd98c1af9659285205c8aa2b9915cb":{"id":"0x7ec72bd532dd98c1af9659285205c8aa2b9915cb","__typename":"Pair","reserveUSD":"8.083133842463857805891359263002549","reserveETH":"0.011277686251020562","volumeUSD":"0","untrackedVolumeUSD":"754.8434242674050254688051257716858","trackedReserveETH":"0.022555372502041124","token0":{"__ref":"Token:0x039bcd43b18a29aa72cabfe269ba045447c881e4"},"token1":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"reserve0":"59.796383347155094958","reserve1":"0.011277686251020562","token0Price":"5302.185396560742769849194486796187","token1Price":"0.0001886014775433256247995416071169464","totalSupply":"-15.023353626873143591","txCount":"89","timestamp":"1635898074","oneDay":{"untrackedVolumeUSD":"153.1041742710051185495436949060425","volumeUSD":"0","reserveUSD":"918.9654969246811053040303578173059","txCount":"48"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"15.10490342400231020947002257757228","txCount":"48"}},"Pair:0x49f8c72fca1f6f62411da1aa451c479e1324eb8f":{"id":"0x49f8c72fca1f6f62411da1aa451c479e1324eb8f","__typename":"Pair","reserveUSD":"4.731847907416688574000000000000001","reserveETH":"0.007464205183266355383932766182395668","volumeUSD":"0","untrackedVolumeUSD":"7.096473073632947580499999999999999","trackedReserveETH":"0.007464205183266355383932766182395666","token0":{"__ref":"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72"},"token1":{"__ref":"Token:0x9288df32951386a8254aeaf80a66b78ccaf75b82"},"reserve0":"4.731847907416688574","reserve1":"5.34","token0Price":"0.8861138403402038528089887640449438","token1Price":"1.128523169907911685041636856787093","totalSupply":"0.000000049999998999","txCount":"8","timestamp":"1633513907","oneDay":{"untrackedVolumeUSD":"7.096473073632947580499999999999999","volumeUSD":"0","reserveUSD":"4.731847907416688574000000000000001","txCount":"8"},"sevenDay":{"untrackedVolumeUSD":"7.096473073632947580499999999999999","volumeUSD":"0","reserveUSD":"4.731847907416688574000000000000001","txCount":"8"}},"Token:0x851fbc1e2fe2b97f4093887cb2423d9f38029f9f":{"id":"0x851fbc1e2fe2b97f4093887cb2423d9f38029f9f","__typename":"Token","name":"Bitcoin cash uni","symbol":"Buni","totalSupply":"34472","derivedETH":"0"},"Pair:0x7bdcb414f3f1461705311ec10b1c538ccb22133a":{"id":"0x7bdcb414f3f1461705311ec10b1c538ccb22133a","__typename":"Pair","reserveUSD":"4.148464695578589860506470630739027","reserveETH":"0.006908944862607202","volumeUSD":"0","untrackedVolumeUSD":"1.536366832744571340492717598318163","trackedReserveETH":"0.013817889725214404","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x851fbc1e2fe2b97f4093887cb2423d9f38029f9f"},"reserve0":"0.006908944862607202","reserve1":"14494.14095044","token0Price":"0.0000004766715658576141079283936308423651","token1Price":"2097880.535837769252540060991200189","totalSupply":"0.000099999999999","txCount":"3","timestamp":"1634614795","oneDay":{"untrackedVolumeUSD":"1.536366832744571340492717598318163","volumeUSD":"0","reserveUSD":"4.148464695578589860506470630739027","txCount":"3"},"sevenDay":{"untrackedVolumeUSD":"0.3081331340655133374007581794889736","volumeUSD":"0","reserveUSD":"6.778928949441293422816679948757418","txCount":"3"}},"Pair:0x999069092e110147fb26cbe66d693ebb03700a06":{"id":"0x999069092e110147fb26cbe66d693ebb03700a06","__typename":"Pair","reserveUSD":"3.871718754258934464947568197846948","reserveETH":"0.006426879156985525428531727090797942","volumeUSD":"2868.663489013062212189021953774888","untrackedVolumeUSD":"2869.691773425127241410503691727971","trackedReserveETH":"0.006426879156985525428531727090797943","token0":{"__ref":"Token:0x0b00366fbf7037e9d75e4a569ab27dab84759302"},"token1":{"__ref":"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72"},"reserve0":"8.153498140455348032","reserve1":"1.910753445423700351","token0Price":"4.267163908553020657341561535362889","token1Price":"0.2343476888702633091014818455430263","totalSupply":"3.927931108728861689","txCount":"54","timestamp":"1634756258","oneDay":{"untrackedVolumeUSD":"2869.691773425127241410503691727971","volumeUSD":"2868.663489013062212189021953774888","reserveUSD":"3.871718754258934464947568197846948","txCount":"54"},"sevenDay":{"untrackedVolumeUSD":"2869.691773425127241410503691727971","volumeUSD":"2868.663489013062212189021953774888","reserveUSD":"3.871718754258934464947568197846948","txCount":"54"}},"Pair:0x4f4ed4aa14fcce2697650c02cb0a88207185940f":{"id":"0x4f4ed4aa14fcce2697650c02cb0a88207185940f","__typename":"Pair","reserveUSD":"2.936865421261924035038734088995088","reserveETH":"0.004207194401081646746288594619387133","volumeUSD":"1519.099933761245575623163389515323","untrackedVolumeUSD":"1519.706508899645686761120799777421","trackedReserveETH":"0.004207194401081646746288594619387133","token0":{"__ref":"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72"},"token1":{"__ref":"Token:0xc41c680c60309d4646379ed62020c534eb67b6f4"},"reserve0":"1.382184040584896371","reserve1":"83.560483533660055775","token0Price":"0.01654112066055866379692011396674357","token1Price":"60.45539601101161176827901459336248","totalSupply":"10.69064033728338695","txCount":"39","timestamp":"1634642298","oneDay":{"untrackedVolumeUSD":"1519.523044908478636481876093620047","volumeUSD":"1519.099933761245575623163389515323","reserveUSD":"2.457660181080279268448336241418957","txCount":"38"},"sevenDay":{"untrackedVolumeUSD":"1519.099933761245575623163389515323","volumeUSD":"1519.099933761245575623163389515323","reserveUSD":"1.838250173528078395882716330990221","txCount":"38"}},"Pair:0x2d79cc07af519d3e046fa2e2d9d852348c9f67c1":{"id":"0x2d79cc07af519d3e046fa2e2d9d852348c9f67c1","__typename":"Pair","reserveUSD":"1.893021891428856339043349566012788","reserveETH":"0.003152240446558365070977083938471181","volumeUSD":"0","untrackedVolumeUSD":"0.2064107334583345900979640328947619","trackedReserveETH":"0.003152240446558365070977083938471181","token0":{"__ref":"Token:0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129"},"token1":{"__ref":"Token:0x77cb87b57f54667978eb1b199b28a0db8c8e1c0b"},"reserve0":"80.568630010507778517","reserve1":"1.242024950061094756","token0Price":"64.86876934842946341910234810435895","token1Price":"0.0154157387298146882695059895049802","totalSupply":"9.999999999999999","txCount":"2","timestamp":"1634530631","oneDay":{"untrackedVolumeUSD":"0.2064107334583345900979640328947619","volumeUSD":"0","reserveUSD":"1.893021891428856339043349566012788","txCount":"2"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"1.376602024601410365158899398582872","txCount":"2"}},"Token:0x9630d2223142a760ca8163497595ca0f41b2a610":{"id":"0x9630d2223142a760ca8163497595ca0f41b2a610","__typename":"Token","name":"GiveMeCash","symbol":"GIVECASH","totalSupply":"34472","derivedETH":"0"},"Pair:0xb299e5b9f3dc386b918c4c2ab032936bb8e33fd5":{"id":"0xb299e5b9f3dc386b918c4c2ab032936bb8e33fd5","__typename":"Pair","reserveUSD":"1.737476205514054855224233176695049","reserveETH":"0.002510070371757844","volumeUSD":"0","untrackedVolumeUSD":"0.003485366686687997867180104224868958","trackedReserveETH":"0.005020140743515688","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x9630d2223142a760ca8163497595ca0f41b2a610"},"reserve0":"0.002510070371757844","reserve1":"249","token0Price":"0.0000100806039026419437751004016064257","token1Price":"99200.40601316733661621999718406197","totalSupply":"0.790569415042093832","txCount":"2","timestamp":"1636517283","oneDay":{"untrackedVolumeUSD":"undefined","volumeUSD":"undefined","reserveUSD":"undefined","txCount":"undefined"},"sevenDay":{"untrackedVolumeUSD":"undefined","volumeUSD":"undefined","reserveUSD":"undefined","txCount":"undefined"}},"Token:0x048a4811d30089b5aa86e2e711a6a4aa67dbe275":{"id":"0x048a4811d30089b5aa86e2e711a6a4aa67dbe275","__typename":"Token","name":"MrUSD","symbol":"MrUSD","totalSupply":"24472","derivedETH":"0"},"Pair:0x5da831a5b968804053c9bc97c5fb5e7911b88b99":{"id":"0x5da831a5b968804053c9bc97c5fb5e7911b88b99","__typename":"Pair","reserveUSD":"0.9999999999999999990000000000000001","reserveETH":"0.001750689840155761632335620399076439","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"0.003501379680311523264671240798152878","token0":{"__ref":"Token:0x048a4811d30089b5aa86e2e711a6a4aa67dbe275"},"token1":{"__ref":"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72"},"reserve0":"1","reserve1":"0.999999999999999999","token0Price":"1.000000000000000001","token1Price":"0.999999999999999999","totalSupply":"0.000000009999998999","txCount":"1","timestamp":"1633309247","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.9999999999999999990000000000000001","txCount":"1"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.9999999999999999990000000000000001","txCount":"1"}},"Token:0x445b3712a09f8102dd0c1ffb6b3b0de4d3b643b7":{"id":"0x445b3712a09f8102dd0c1ffb6b3b0de4d3b643b7","__typename":"Token","name":"The Wireless Token","symbol":"WRS","totalSupply":"34472","derivedETH":"0"},"Pair:0x30aeb5f340e64468873292b02eb7567897ac5e04":{"id":"0x30aeb5f340e64468873292b02eb7567897ac5e04","__typename":"Pair","reserveUSD":"0.7371077406788383916568076440642564","reserveETH":"0.001256270031039712","volumeUSD":"0","untrackedVolumeUSD":"0.4157093964285482454752605893367573","trackedReserveETH":"0.002512540062079424","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x445b3712a09f8102dd0c1ffb6b3b0de4d3b643b7"},"reserve0":"0.001256270031039712","reserve1":"436.494632","token0Price":"0.000002878088157198029413566762947041236","token1Price":"347452.8733593597533595491027633896","totalSupply":"0.000000739979817135","txCount":"7","timestamp":"1633919855","oneDay":{"untrackedVolumeUSD":"0.4157093964285482454752605893367573","volumeUSD":"0","reserveUSD":"0.7371077406788383916568076440642564","txCount":"7"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"1.489873494178970296127289368768063","txCount":"7"}},"Token:0x9654b7c1b90aff574c38ca5f7b3b8e52a385c9ea":{"id":"0x9654b7c1b90aff574c38ca5f7b3b8e52a385c9ea","__typename":"Token","name":"LOVE","symbol":"LOVE","totalSupply":"34472","derivedETH":"0"},"Pair:0x302431c85b4a1a15ea0ed88159c9ba119cdf085b":{"id":"0x302431c85b4a1a15ea0ed88159c9ba119cdf085b","__typename":"Pair","reserveUSD":"0.6286422107528759799009052244159322","reserveETH":"0.001","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"0.001999999999999999999999999999999999","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x9654b7c1b90aff574c38ca5f7b3b8e52a385c9ea"},"reserve0":"0.001","reserve1":"1215225","token0Price":"0.0000000008228928799193564977679030632187455","token1Price":"1215225000","totalSupply":"34.860077452581770336","txCount":"1","timestamp":"1634837230","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.6286422107528759799009052244159322","txCount":"1"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.6286422107528759799009052244159322","txCount":"1"}},"Token:0x58082f66a1a02face8572b71b3c017f3068740e9":{"id":"0x58082f66a1a02face8572b71b3c017f3068740e9","__typename":"Token","name":"AGON","symbol":"AGON","totalSupply":"34472","derivedETH":"0"},"Pair:0x4463a28c1648485278253ac4d0f09f4f776eee7d":{"id":"0x4463a28c1648485278253ac4d0f09f4f776eee7d","__typename":"Pair","reserveUSD":"0.4536041181627036010492135241586404","reserveETH":"0.000736907313942043","volumeUSD":"0","untrackedVolumeUSD":"0.0001630383109798489545776012193046056","trackedReserveETH":"0.001473814627884086","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x58082f66a1a02face8572b71b3c017f3068740e9"},"reserve0":"0.000736907313942043","reserve1":"136.592230691138800299","token0Price":"0.00000539494311069808649284640384697724","token1Price":"185358.7664375952147564431771424095","totalSupply":"0.315999759365575583","txCount":"3","timestamp":"1634866959","oneDay":{"untrackedVolumeUSD":"0.0001630383109798489545776012193046056","volumeUSD":"0","reserveUSD":"0.4536041181627036010492135241586404","txCount":"3"},"sevenDay":{"untrackedVolumeUSD":"0.0001630383109798489545776012193046056","volumeUSD":"0","reserveUSD":"0.4536041181627036010492135241586404","txCount":"3"}},"Token:0x7df65f158126898725f262378538b60db543c11a":{"id":"0x7df65f158126898725f262378538b60db543c11a","__typename":"Token","name":"MGOT","symbol":"MGOT","totalSupply":"24472","derivedETH":"0"},"Pair:0x91c109b9ae95ad94831232bd7369d95730f08304":{"id":"0x91c109b9ae95ad94831232bd7369d95730f08304","__typename":"Pair","reserveUSD":"0.07898115918306551900000000000000002","reserveETH":"0.0001326067359462007549404646279196051","volumeUSD":"0","untrackedVolumeUSD":"68.29039067376151403000000000000001","trackedReserveETH":"0.0002652134718924015098809292558392101","token0":{"__ref":"Token:0x7b2b3c5308ab5b2a1d9a94d20d35ccdf61e05b72"},"token1":{"__ref":"Token:0x7df65f158126898725f262378538b60db543c11a"},"reserve0":"0.078981159183065519","reserve1":"139.72","token0Price":"0.0005652817004227420483824792442026911","token1Price":"1769.029493175096325258965031666283","totalSupply":"0.000000031622775601","txCount":"12","timestamp":"1633308901","oneDay":{"untrackedVolumeUSD":"68.29039067376151403000000000000001","volumeUSD":"0","reserveUSD":"0.07898115918306551900000000000000002","txCount":"12"},"sevenDay":{"untrackedVolumeUSD":"68.29039067376151403000000000000001","volumeUSD":"0","reserveUSD":"0.07898115918306551900000000000000002","txCount":"12"}},"Pair:0x68aa96adb8e1a1eec83d50d34a4fe9d5de6b85cb":{"id":"0x68aa96adb8e1a1eec83d50d34a4fe9d5de6b85cb","__typename":"Pair","reserveUSD":"0.01342810620758272952590108207486431","reserveETH":"0.00002181906588825944757846547209217457","volumeUSD":"0","untrackedVolumeUSD":"21.61252609429517381596078906016228","trackedReserveETH":"0.00002181906588825944757846547209217456","token0":{"__ref":"Token:0x2f309b9d47b1ce7f0ec30a26bab2deab8c4ea5e9"},"token1":{"__ref":"Token:0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129"},"reserve0":"54566531.544528296523210889","reserve1":"0.48785020205713839","token0Price":"111850997.11845012340072375260302","token1Price":"0.000000008940465670958666001117643417757497","totalSupply":"1062.788607121776873508","txCount":"12","timestamp":"1633699164","oneDay":{"untrackedVolumeUSD":"21.61252609429517381596078906016228","volumeUSD":"0","reserveUSD":"0.01342810620758272952590108207486431","txCount":"12"},"sevenDay":{"untrackedVolumeUSD":"21.61252609429517381596078906016228","volumeUSD":"0","reserveUSD":"0.01342810620758272952590108207486431","txCount":"12"}},"Token:0xf3475035c1c3e008fb52c57ed7227ad572b4380e":{"id":"0xf3475035c1c3e008fb52c57ed7227ad572b4380e","__typename":"Token","name":"EROS","symbol":"EROS","totalSupply":"34472","derivedETH":"0"},"Pair:0xb9d1b7fc8754337541e6e328d67d2ed209a0364c":{"id":"0xb9d1b7fc8754337541e6e328d67d2ed209a0364c","__typename":"Pair","reserveUSD":"0.006663500437559832617044633811207875","reserveETH":"0.000011095896567851","volumeUSD":"0","untrackedVolumeUSD":"122.7331531660004198837876991669235","trackedReserveETH":"0.000022191793135702","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xf3475035c1c3e008fb52c57ed7227ad572b4380e"},"reserve0":"0.000011095896567851","reserve1":"0.048276974308355144","token0Price":"0.0002298382764623811170254925272806742","token1Price":"4350.885393815922773269904230889656","totalSupply":"0.00072125918692906","txCount":"49","timestamp":"1634486880","oneDay":{"untrackedVolumeUSD":"122.7331531660004198837876991669235","volumeUSD":"0","reserveUSD":"0.006663500437559832617044633811207875","txCount":"49"},"sevenDay":{"untrackedVolumeUSD":"122.6714004620504044922515687500704","volumeUSD":"0","reserveUSD":"0.1341848950967294984816668319902914","txCount":"49"}},"Token:0x8f66c730e383bb412a9a3cb58178bab2f432d194":{"id":"0x8f66c730e383bb412a9a3cb58178bab2f432d194","__typename":"Token","name":"sVNT Token","symbol":"sVNT","totalSupply":"34472","derivedETH":"0"},"Pair:0x359ead627405ca399aa5d11b2bd94c45eee75353":{"id":"0x359ead627405ca399aa5d11b2bd94c45eee75353","__typename":"Pair","reserveUSD":"0.001815811317581583253240286691327578","reserveETH":"0.000003120077085364","volumeUSD":"0","untrackedVolumeUSD":"2.950816108974808916119305871154341","trackedReserveETH":"0.000006240154170728","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x8f66c730e383bb412a9a3cb58178bab2f432d194"},"reserve0":"0.000003120077085364","reserve1":"4.693784164712912154","token0Price":"0.0000006647252996463322796303246926053191","token1Price":"1504380.833002822278279375488797036","totalSupply":"0.003811093841754207","txCount":"14","timestamp":"1633579280","oneDay":{"untrackedVolumeUSD":"2.950816108974808916119305871154341","volumeUSD":"0","reserveUSD":"0.001815811317581583253240286691327578","txCount":"14"},"sevenDay":{"untrackedVolumeUSD":"2.950660112668775151207152776698407","volumeUSD":"0","reserveUSD":"0.002242598122906932055938926731005056","txCount":"14"}},"Token:0x62af38bd5695b1fb6a8cd039931344908616ade9":{"id":"0x62af38bd5695b1fb6a8cd039931344908616ade9","__typename":"Token","name":"Beachswap Token","symbol":"BEACH","totalSupply":"34472","derivedETH":"0"},"Pair:0x4057cd0e84fe3bb3c981c41fdc22de8b8f8ebff4":{"id":"0x4057cd0e84fe3bb3c981c41fdc22de8b8f8ebff4","__typename":"Pair","reserveUSD":"0.001535820384504223367239485959246455","reserveETH":"0.000002605424408005","volumeUSD":"0","untrackedVolumeUSD":"0.00000002801686780065166348474107060658915","trackedReserveETH":"0.000005210848816009999999999999999999999","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x62af38bd5695b1fb6a8cd039931344908616ade9"},"reserve0":"0.000002605424408005","reserve1":"63301.676854922080811756","token0Price":"0.00000000004115885293175156701635998488645392","token1Price":"24296109555.29230624448020388269027","totalSupply":"0.404969134626330738","txCount":"2","timestamp":"1635117803","oneDay":{"untrackedVolumeUSD":"0.00000002801686780065166348474107060658915","volumeUSD":"0","reserveUSD":"0.001535820384504223367239485959246455","txCount":"2"},"sevenDay":{"untrackedVolumeUSD":"0.00000002801686780065166348474107060658915","volumeUSD":"0","reserveUSD":"0.001535820384504223367239485959246455","txCount":"2"}},"Token:0xa532cc9c5c5a978826d305767a11926616c7b304":{"id":"0xa532cc9c5c5a978826d305767a11926616c7b304","__typename":"Token","name":"Pusheen","symbol":"PSN","totalSupply":"24472","derivedETH":"0"},"Pair:0xb91ba3be3355a5054a88131d54a547a071322809":{"id":"0xb91ba3be3355a5054a88131d54a547a071322809","__typename":"Pair","reserveUSD":"0.0001087480048935397731403240494477646","reserveETH":"0.0000001799534533997009171877284960871663","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"0.0000003599069067994018343754569921743327","token0":{"__ref":"Token:0x7ebeadb95724a006afaf2f1f051b13f4ebebf711"},"token1":{"__ref":"Token:0xa532cc9c5c5a978826d305767a11926616c7b304"},"reserve0":"6.5","reserve1":"15.45","token0Price":"0.420711974110032362459546925566343","token1Price":"2.376923076923076923076923076923077","totalSupply":"0","txCount":"35","timestamp":"1634536938","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.0001087480048935397731403240494477646","txCount":"35"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"1049.093823350392493340944416717029","txCount":"35"}},"Token:0xbad991f400fefd532ff4ad1bab02fd1ae466070f":{"id":"0xbad991f400fefd532ff4ad1bab02fd1ae466070f","__typename":"Token","name":"TEST","symbol":"TEST","totalSupply":"34472","derivedETH":"0"},"Pair:0x722d298c1088e22ccb5a399e2637f40c3ce54de6":{"id":"0x722d298c1088e22ccb5a399e2637f40c3ce54de6","__typename":"Pair","reserveUSD":"0.00001549315181325454272660978518554189","reserveETH":"0.000000025001704778","volumeUSD":"0","untrackedVolumeUSD":"0.03099346032650275656277081712049175","trackedReserveETH":"0.00000005000340955600000000000000000000001","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xbad991f400fefd532ff4ad1bab02fd1ae466070f"},"reserve0":"0.000000025001704778","reserve1":"206.682027147430177409","token0Price":"0.0000000001209670000002748847113105325711","token1Price":"8266717369.181079185087560191972442","totalSupply":"0.002272933913650825","txCount":"3","timestamp":"1633857785","oneDay":{"untrackedVolumeUSD":"0.03099346032650275656277081712049175","volumeUSD":"0","reserveUSD":"0.00001549315181325454272660978518554189","txCount":"3"},"sevenDay":{"untrackedVolumeUSD":"0.03099346032650275656277081712049175","volumeUSD":"0","reserveUSD":"0.00001549315181325454272660978518554189","txCount":"3"}},"Pair:0x750710aa367008e49cecca49592f803438268b69":{"id":"0x750710aa367008e49cecca49592f803438268b69","__typename":"Pair","reserveUSD":"0.00001274752533318566246751861414956981","reserveETH":"0.000000023000535163","volumeUSD":"0","untrackedVolumeUSD":"0.3113114817406056295752383578401146","trackedReserveETH":"0.00000004600107032599999999999999999999998","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xa532cc9c5c5a978826d305767a11926616c7b304"},"reserve0":"0.000000023000535163","reserve1":"43815.42","token0Price":"0.0000000000005249415653895363778322791382577184","token1Price":"1904973936018.846884601943294357424","totalSupply":"0.000000000316226766","txCount":"4","timestamp":"1635050356","oneDay":{"untrackedVolumeUSD":"0.3113114817406056295752383578401146","volumeUSD":"0","reserveUSD":"0.00001274752533318566246751861414956981","txCount":"4"},"sevenDay":{"untrackedVolumeUSD":"0.3113114817406056295752383578401146","volumeUSD":"0","reserveUSD":"0.00001274752533318566246751861414956981","txCount":"4"}},"Pair:0xb0751728f92c994bc4e6d3aaec6f31a7eb5c25fa":{"id":"0xb0751728f92c994bc4e6d3aaec6f31a7eb5c25fa","__typename":"Pair","reserveUSD":"0.0000006648447327262736896609866252294175","reserveETH":"0.000000001054092554","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"0.000000002108185108","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0x7df65f158126898725f262378538b60db543c11a"},"reserve0":"0.000000001054092554","reserve1":"0.01","token0Price":"0.0000001054092554","token1Price":"9486832.975010275995176036505803835","totalSupply":"0","txCount":"2","timestamp":"1634739972","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.0000006648447327262736896609866252294175","txCount":"2"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.0000006648447327262736896609866252294175","txCount":"2"}},"Token:0xac1d25cc8c073a0cd04231c0000eb598689c3ff9":{"id":"0xac1d25cc8c073a0cd04231c0000eb598689c3ff9","__typename":"Token","name":"EverUp","symbol":"EUP","totalSupply":"34472","derivedETH":"0"},"Pair:0xb4c2684d26cf1367d136dec112528ebbc61e2e24":{"id":"0xb4c2684d26cf1367d136dec112528ebbc61e2e24","__typename":"Pair","reserveUSD":"0.00000002837803141116290303007771144010539","reserveETH":"0.000000000047289285","volumeUSD":"0","untrackedVolumeUSD":"1.362344219714995606003038612376603","trackedReserveETH":"0.00000000009457856999999999999999999999999999","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xac1d25cc8c073a0cd04231c0000eb598689c3ff9"},"reserve0":"0.000000000047289285","reserve1":"72184280.4049425147","token0Price":"0.0000000000000000006551188809352190383646205906509667","token1Price":"1526440511945623933.624710121965261","totalSupply":"0.058225069441593635","txCount":"6","timestamp":"1634753856","oneDay":{"untrackedVolumeUSD":"1.362344219714995606003038612376603","volumeUSD":"0","reserveUSD":"0.00000002837803141116290303007771144010539","txCount":"6"},"sevenDay":{"untrackedVolumeUSD":"1.362344219714995606003038612376603","volumeUSD":"0","reserveUSD":"0.00000002837803141116290303007771144010539","txCount":"6"}},"Token:0xfcde51456968cf14ca3aed6474460d3239fd412d":{"id":"0xfcde51456968cf14ca3aed6474460d3239fd412d","__typename":"Token","name":"Salapi","symbol":"SLPI","totalSupply":"34472","derivedETH":"0"},"Pair:0x7746a11ca471b7aaae707deb79f58d0085aa6ec6":{"id":"0x7746a11ca471b7aaae707deb79f58d0085aa6ec6","__typename":"Pair","reserveUSD":"0.0000000000000006509562193745112537858138921933627","reserveETH":"0.000000000000000001","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"0.000000000000000001999999999999999999999999999999999","token0":{"__ref":"Token:0x3743ec0673453e5009310c727ba4eaf7b3a1cc04"},"token1":{"__ref":"Token:0xfcde51456968cf14ca3aed6474460d3239fd412d"},"reserve0":"0.000000000000000001","reserve1":"0.000000000005721296","token0Price":"0.0000001747855730589712540655124293516714","token1Price":"5721296","totalSupply":"0","txCount":"2","timestamp":"1634769325","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.0000000000000006509562193745112537858138921933627","txCount":"2"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.01966063441304753164778865760415554","txCount":"2"}},"Pair:0x8b8b27b16a0b7fabf4d28efd6fb6e80d59ce9fd9":{"id":"0x8b8b27b16a0b7fabf4d28efd6fb6e80d59ce9fd9","__typename":"Pair","reserveUSD":"0.000000000000000137339969955834894868110821807381","reserveETH":"0.0000000000000000002329446798230673140645222329384179","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"0.0000000000000000002329446798230673140645222329384179","token0":{"__ref":"Token:0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129"},"token1":{"__ref":"Token:0xff3ed63bf8bc9303ea0a7e1215ba2f82d569799e"},"reserve0":"0.000000000000000074","reserve1":"0.000000000000013774","token0Price":"0.005372440830550312182372586031653841","token1Price":"186.1351351351351351351351351351351","totalSupply":"0","txCount":"4","timestamp":"1633858077","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.000000000000000137339969955834894868110821807381","txCount":"4"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.000000000000000137339969955834894868110821807381","txCount":"4"}},"Pair:0x41345450e40e60ef381c54cc68f9ca2c23e2f93a":{"id":"0x41345450e40e60ef381c54cc68f9ca2c23e2f93a","__typename":"Pair","reserveUSD":"0.00000000000000002044333720321725129752908653186295","reserveETH":"0.00000000000000000003548487178589211927247834410968362","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"0.00000000000000000003548487178589211927247834410968361","token0":{"__ref":"Token:0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129"},"token1":{"__ref":"Token:0xc70c7718c7f1ccd906534c2c4a76914173ec2c44"},"reserve0":"0.00000000000000024","reserve1":"0.000000000000004172","token0Price":"0.0575263662511984659635666347075743","token1Price":"17.38333333333333333333333333333333","totalSupply":"0","txCount":"2","timestamp":"1633263334","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.00000000000000002044333720321725129752908653186295","txCount":"2"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.00000000000000002044333720321725129752908653186295","txCount":"2"}},"Pair:0x7627690dbbcc4d9bfc8b898526bed2e26c82ac72":{"id":"0x7627690dbbcc4d9bfc8b898526bed2e26c82ac72","__typename":"Pair","reserveUSD":"0.00000000000000001696329076692320239461054874771324","reserveETH":"0.00000000000000000002744674519018224135914355734631153","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"0.00000000000000000002744674519018224135914355734631153","token0":{"__ref":"Token:0x3d13dafcca3a188db340c81414239bc2be312ec9"},"token1":{"__ref":"Token:0xc41c680c60309d4646379ed62020c534eb67b6f4"},"reserve0":"0.000000000000000908","reserve1":"0.000000000000001102","token0Price":"0.8239564428312159709618874773139746","token1Price":"1.213656387665198237885462555066079","totalSupply":"0","txCount":"2","timestamp":"1634456925","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.00000000000000001696329076692320239461054874771324","txCount":"2"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.00000000000000001696329076692320239461054874771324","txCount":"2"}},"Pair:0x4bdb186f0ceb0b56521d07a3f9bd6c1df226d2e5":{"id":"0x4bdb186f0ceb0b56521d07a3f9bd6c1df226d2e5","__typename":"Pair","reserveUSD":"0.0000000000000000002434976757376967060385154460897127","reserveETH":"0.0000000000000000000004014847722513863907240232118055342","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"0.0000000000000000000004014847722513863907240232118055343","token0":{"__ref":"Token:0x2f309b9d47b1ce7f0ec30a26bab2deab8c4ea5e9"},"token1":{"__ref":"Token:0xc41c680c60309d4646379ed62020c534eb67b6f4"},"reserve0":"0.000000000000031623","reserve1":"0.000000000000000032","token0Price":"988.21875","token1Price":"0.00101192170255826455428011257628941","totalSupply":"0","txCount":"2","timestamp":"1634498583","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.0000000000000000002434976757376967060385154460897127","txCount":"2"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.0000000000000000002434976757376967060385154460897127","txCount":"2"}},"Pair:0x32770aa613175328682126f3dc2676c13cf510f0":{"id":"0x32770aa613175328682126f3dc2676c13cf510f0","__typename":"Pair","reserveUSD":"0.0000000000000000000928144563553173774072901436842735","reserveETH":"0.0000000000000000000001638416773194006932110960141078552","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"0.0000000000000000000001638416773194006932110960141078553","token0":{"__ref":"Token:0x5fa664f69c2a4a3ec94fac3cbf7049bd9ca73129"},"token1":{"__ref":"Token:0x675e1d6fce8c7cc091aed06a68d079489450338a"},"reserve0":"0.000000000000000004","reserve1":"0.000000000000300234","token0Price":"0.00001332294143901090482756783042560136","token1Price":"75058.5","totalSupply":"0","txCount":"2","timestamp":"1633425797","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.0000000000000000000928144563553173774072901436842735","txCount":"2"},"sevenDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0.0000000000000000000928144563553173774072901436842735","txCount":"2"}},"Pair:0x24a3afe7550ed094167700caa1d5b4ef16adcbcc":{"id":"0x24a3afe7550ed094167700caa1d5b4ef16adcbcc","__typename":"Pair","reserveUSD":"0","reserveETH":"0","volumeUSD":"0","untrackedVolumeUSD":"0","trackedReserveETH":"0","token0":{"__ref":"Token:0x2a886b947d5a8f0e09408c9069914fa44c06ed7e"},"token1":{"__ref":"Token:0x80453acdfe0073d6743b27d72e06f48777eead80"},"reserve0":"65284.33908034","reserve1":"38326","token0Price":"1.703395582120231696498460575066534","token1Price":"0.5870626943597511668937567285739936","totalSupply":"0.000000000499999","txCount":"3","timestamp":"1636105323","oneDay":{"untrackedVolumeUSD":"0","volumeUSD":"0","reserveUSD":"0","txCount":"3"},"sevenDay":{"untrackedVolumeUSD":"undefined","volumeUSD":"undefined","reserveUSD":"undefined","txCount":"3"}},"ROOT_QUERY":{"__typename":"Query","pairs({\"first\":1000,\"orderBy\":\"reserveUSD\",\"orderDirection\":\"desc\"})":[{"__ref":"Pair:0x24f011f12ea45afadb1d4245ba15dcab38b43d13"},{"__ref":"Pair:0x674a71e69fe8d5ccff6fdcf9f1fa4262aa14b154"},{"__ref":"Pair:0x80f712670d268cf2c05e7162674c7466c940ebe3"},{"__ref":"Pair:0x437e444365ad9ed788e8f255c908bcead5aea645"},{"__ref":"Pair:0x0663b29e3caa8f2db0313ea8b3e942a0431429cf"},{"__ref":"Pair:0x4ff52e9d7824ec9b4e0189f11b5aa0f02b459b03"},{"__ref":"Pair:0x8221d04a71fcd0dd3d096cb3b49e22918095933f"},{"__ref":"Pair:0xbe48dc2353a460668a5d859c66e4472661581998"},{"__ref":"Pair:0x5775d98022590dc60e9c4ae0a1c56bf1fd8fcadc"},{"__ref":"Pair:0x41075d2ea8bef1cafb24d9bd2061b620cbc05b60"},{"__ref":"Pair:0xcabdb1321ceab169935a0c9d4c856250766c3df7"},{"__ref":"Pair:0x287a276401cadbe50d5c0398137490e6d45830dd"},{"__ref":"Pair:0xb04d3081ba0db7502ac96a4b81d38589b827a09f"},{"__ref":"Pair:0x1ee39f93450d80981c169e59c8a641a3bc853a09"},{"__ref":"Pair:0xc47b0b4b51ee06de0daf02517d78f0473b776633"},{"__ref":"Pair:0xd6ecadb40b35d17f739ec27285759d0ca119e3a1"},{"__ref":"Pair:0xc98552ad7dfc5daabad2660df378e0070ca75efc"},{"__ref":"Pair:0xf9d33abfaf59fd19077f44399a8971621cd2ea55"},{"__ref":"Pair:0x64c379ab93b859ada71b8abaca77bed104a5dbca"},{"__ref":"Pair:0x49260567a5610414954a1d8f0e7774104fc5caed"},{"__ref":"Pair:0xcfcbc90e617a3996355761b52df2830b7b6718d0"},{"__ref":"Pair:0x12e03015a85a0c2c1eca69486147608abb0b801c"},{"__ref":"Pair:0xfcf26e0eb200692b3002f941eea0486d2e901aa9"},{"__ref":"Pair:0x24615e918ad078900bfe13f4cd26876bae64dd75"},{"__ref":"Pair:0x20943ad7855bde06dd41bb89c9d2efe05db329ec"},{"__ref":"Pair:0xa331430473aba2337698fd95a7c2fcf376debfb1"},{"__ref":"Pair:0x1c47c2a72e86b9b488f436f7ac76acc61e531926"},{"__ref":"Pair:0xe3e155c22685f7ceab3f429ca60f302bcfb13616"},{"__ref":"Pair:0x6b68f5d7d0531207a01e9ac16cfcd223d2139d28"},{"__ref":"Pair:0x211c0d74b1213a40bdfd61490a9893353544ea46"},{"__ref":"Pair:0xa32b73445dbc075da5054503171362d790164dc9"},{"__ref":"Pair:0x98a03761fe62b9a1fd7888d86f70e94a40acd511"},{"__ref":"Pair:0x8e5edb62775c1cd003804ec2a8242e5e0393876b"},{"__ref":"Pair:0xe75ec02f28bc0e1ca1794fbffe8229ac1662075e"},{"__ref":"Pair:0xb9dd1a938f930321c9ab2bd24f777b876d5d050d"},{"__ref":"Pair:0xb02a135992478a485d9dd771092cdd8b4487594a"},{"__ref":"Pair:0xf9cfd97572c5fbc7917f09b66ebb27a19f401048"},{"__ref":"Pair:0x512f57db93c40540dbf17e948f6f913684545cea"},{"__ref":"Pair:0x3dcafb52042ca0a98a5b9962e3ad995d9b654c94"},{"__ref":"Pair:0xfec4202e22d0cd950afc52622114e787fffa0f53"},{"__ref":"Pair:0x64174291e424553337cab5526b8566f671a968d8"},{"__ref":"Pair:0x58ecce662150f457e97764213bd5eebc16beca60"},{"__ref":"Pair:0xae2e976af611a9e5e088fde5bc65e705d1a83e46"},{"__ref":"Pair:0x6fb2d514fd39614b97b95a6f811226989ce6078e"},{"__ref":"Pair:0x61950d3b4ee4773483d2b35dbd98da4c309226c1"},{"__ref":"Pair:0x44ae7de88d22cc5288aab176d4d1f3d43d5d079c"},{"__ref":"Pair:0x2ad4118a28c8bede83dabbe8e914c9ef966ca509"},{"__ref":"Pair:0xcef44088b031ce75027a1269a65ce468dafcc66f"},{"__ref":"Pair:0xaaceda629026fe99a13600d1b6eb7f00185061f1"},{"__ref":"Pair:0xdb959a87fe712710f6a1120289caa62d8f7da8fe"},{"__ref":"Pair:0x8305de9fd7f4e1f9458a411344c8a3cd772dc6e5"},{"__ref":"Pair:0x22d8267e9ac06840c7ba240b4f45495361343821"},{"__ref":"Pair:0x90878806cf6af041b2953bbe7d4c6f78201cce66"},{"__ref":"Pair:0xc76a02ac79e94346e0314bc9b7f115033ef23af9"},{"__ref":"Pair:0x7ec72bd532dd98c1af9659285205c8aa2b9915cb"},{"__ref":"Pair:0x49f8c72fca1f6f62411da1aa451c479e1324eb8f"},{"__ref":"Pair:0x7bdcb414f3f1461705311ec10b1c538ccb22133a"},{"__ref":"Pair:0x999069092e110147fb26cbe66d693ebb03700a06"},{"__ref":"Pair:0x4f4ed4aa14fcce2697650c02cb0a88207185940f"},{"__ref":"Pair:0x2d79cc07af519d3e046fa2e2d9d852348c9f67c1"},{"__ref":"Pair:0xb299e5b9f3dc386b918c4c2ab032936bb8e33fd5"},{"__ref":"Pair:0x5da831a5b968804053c9bc97c5fb5e7911b88b99"},{"__ref":"Pair:0x30aeb5f340e64468873292b02eb7567897ac5e04"},{"__ref":"Pair:0x302431c85b4a1a15ea0ed88159c9ba119cdf085b"},{"__ref":"Pair:0x4463a28c1648485278253ac4d0f09f4f776eee7d"},{"__ref":"Pair:0x91c109b9ae95ad94831232bd7369d95730f08304"},{"__ref":"Pair:0x68aa96adb8e1a1eec83d50d34a4fe9d5de6b85cb"},{"__ref":"Pair:0xb9d1b7fc8754337541e6e328d67d2ed209a0364c"},{"__ref":"Pair:0x359ead627405ca399aa5d11b2bd94c45eee75353"},{"__ref":"Pair:0x4057cd0e84fe3bb3c981c41fdc22de8b8f8ebff4"},{"__ref":"Pair:0xb91ba3be3355a5054a88131d54a547a071322809"},{"__ref":"Pair:0x722d298c1088e22ccb5a399e2637f40c3ce54de6"},{"__ref":"Pair:0x750710aa367008e49cecca49592f803438268b69"},{"__ref":"Pair:0xb0751728f92c994bc4e6d3aaec6f31a7eb5c25fa"},{"__ref":"Pair:0xb4c2684d26cf1367d136dec112528ebbc61e2e24"},{"__ref":"Pair:0x7746a11ca471b7aaae707deb79f58d0085aa6ec6"},{"__ref":"Pair:0x8b8b27b16a0b7fabf4d28efd6fb6e80d59ce9fd9"},{"__ref":"Pair:0x41345450e40e60ef381c54cc68f9ca2c23e2f93a"},{"__ref":"Pair:0x7627690dbbcc4d9bfc8b898526bed2e26c82ac72"},{"__ref":"Pair:0x4bdb186f0ceb0b56521d07a3f9bd6c1df226d2e5"},{"__ref":"Pair:0x32770aa613175328682126f3dc2676c13cf510f0"},{"__ref":"Pair:0x24a3afe7550ed094167700caa1d5b4ef16adcbcc"}],"blocks({\"first\":1,\"orderBy\":\"timestamp\",\"orderDirection\":\"asc\",\"where\":{\"timestamp_gt\":1636475520,\"timestamp_lt\":1636476120}})":[{"__ref":"Block:0x93679d152a6fed5c5c77f813c65e2964cb1d26bf6672682a7f459d5774d4e049"}],"blocks({\"first\":1,\"orderBy\":\"timestamp\",\"orderDirection\":\"asc\",\"where\":{\"timestamp_gt\":1635957120,\"timestamp_lt\":1635957720}})":[{"__ref":"Block:0x07e34a1b6b0608bded9ba60443b5e227e04aa03c9e71bb22b3dc3aaf88b88075"}]},"Block:0x93679d152a6fed5c5c77f813c65e2964cb1d26bf6672682a7f459d5774d4e049":{"id":"0x93679d152a6fed5c5c77f813c65e2964cb1d26bf6672682a7f459d5774d4e049","__typename":"Block","number":"1577521","timestamp":"1636475521"},"Block:0x07e34a1b6b0608bded9ba60443b5e227e04aa03c9e71bb22b3dc3aaf88b88075":{"id":"0x07e34a1b6b0608bded9ba60443b5e227e04aa03c9e71bb22b3dc3aaf88b88075","__typename":"Block","number":"1483374","timestamp":"1635957126"}}},"__N_SSG":true},"page":"/pairs/recent","query":{},"buildId":"sZ6q-BWaob1afBjGbJJiF","nextExport":false,"isFallback":false,"gsp":true}</script><script nomodule="" src="/_next/static/chunks/polyfills-78cde1760acba30b47d6.js"></script><script src="/_next/static/chunks/main-f425bd5ca4afaffab9db.js" async=""></script><script src="/_next/static/chunks/webpack-eb080e3f091731f228fb.js" async=""></script><script src="/_next/static/chunks/framework.9707fddd9ae5927c17c3.js" async=""></script><script src="/_next/static/chunks/commons.696becd7d9bea91bdac5.js" async=""></script><script src="/_next/static/chunks/1746e22847ab6dd3740ba32ba781cc82ab8c4d21.27da0e80fb52e7a58975.js" async=""></script><script src="/_next/static/chunks/pages/_app-1725f8ff3086aea1f1d8.js" async=""></script><script src="/_next/static/chunks/fa129ba31f1318b572d7ecbf9aed4e7c04710cc7.67b2fd062c59d0d63572.js" async=""></script><script src="/_next/static/chunks/pages/pairs/recent-8641491385c7f86992a2.js" async=""></script><script src="/_next/static/sZ6q-BWaob1afBjGbJJiF/_buildManifest.js" async=""></script><script src="/_next/static/sZ6q-BWaob1afBjGbJJiF/_ssgManifest.js" async=""></script></body></html>

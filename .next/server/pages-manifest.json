@@ -1,0 +1,19 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/bar": "pages/bar.js",
+  "/": "pages/index.js",
+  "/pairs/[id]": "pages/pairs/[id].js",
+  "/pairs/gainers": "pages/pairs/gainers.js",
+  "/pairs": "pages/pairs.js",
+  "/pairs/losers": "pages/pairs/losers.js",
+  "/pairs/recent": "pages/pairs/recent.js",
+  "/pools/[id]": "pages/pools/[id].js",
+  "/pools": "pages/pools.js",
+  "/pools/recent": "pages/pools/recent.js",
+  "/tokens/[id]": "pages/tokens/[id].js",
+  "/tokens": "pages/tokens.js",
+  "/users/[id]": "pages/users/[id].js",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}
